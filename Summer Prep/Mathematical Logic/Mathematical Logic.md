@@ -84,7 +84,6 @@ The third logical connective that allows us to combine and form new mathematical
     $$
     f\text{ is differentiable}\Rightarrow f\text{ is continuous}
     $$
-    
   
 - **Remark 1.4**
   Implications are often expressed in several equivalent ways.
