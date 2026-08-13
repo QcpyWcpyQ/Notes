@@ -42,7 +42,6 @@ Precisely, while the first proposition asserts that $i$ is greater than $0$ and 
     $$
     \left(0<i<n\right) \land \left(i\text{ is even}\right)
     $$
-    
 
 ------
 
@@ -69,7 +68,7 @@ The second logical connective that allows us to combine mathematical statements 
 The third logical connective that allows us to combine and form new mathematical statements is called implication. In everyday language, an implication corresponds to the word "$\text{implies}$".
 
 - **Definition 1.4**
-  Suppose that $P$ and $Q$ represent formed mathematical statements. An implication is a new mathematical statement of the form $P\Rightarrow Q$, where $\Rightarrow$ is the symbol we use for the word "$\text{implies}$".
+  Suppose that $P$ and $Q$ represent formed mathematical statements. An implication is a new mathematical statement of the form $P\implies Q$, where $\implies$ is the symbol we use for the word "$\text{implies}$".
   The statement $P$ is called antecedent and the statement $Q$ is called consequent.
   
   - **Example 1.4.1**
@@ -104,7 +103,7 @@ These different formulations don't change the logical structure, that is, it is 
 The fourth logical connective that allows us to combine and form new mathematical statements is the equivalence.
 
 - **Definition 1.5**
-  Suppose that $P$ and $Q$ represent formed mathematical statements. We combine the logical connectives "$\Rightarrow$" and "$\land$" as
+  Suppose that $P$ and $Q$ represent formed mathematical statements. We combine the logical connectives "$\implies$" and "$\land$" as
   $$
   (P\Rightarrow Q)\land(Q\Rightarrow P)
   $$
@@ -214,7 +213,7 @@ Note that if the statement is interpreted in the context of natural numbers, it 
 ---
 
 - **Definition 2.3**  
-  Let $P$ and $Q$ be mathematical statements interpreted in some context $u$, the truth value of $P\Rightarrow Q$ in such a context is fully determined by the following truth table:
+  Let $P$ and $Q$ be mathematical statements interpreted in some context $u$, the truth value of $P\implies Q$ in such a context is fully determined by the following truth table:
   $$
   \begin{array}{c|c|c}  P&Q&P\Rightarrow Q \\  1&1&1 \\ 1&0&0 \\ 0&1&1 \\ 0&0&1  \end{array}
   $$
@@ -287,11 +286,11 @@ We now turn to the question of how truth values are assigned to statements invol
   - **Example 2.6.1**  
 
     $$
-    \left[\forall xP(x)\right]=\min_{x \text;{ takes a value in } u}(\left[P(x)\right])
+    \left[\forall xP(x)\right]=\min_{x \text{ takes a value in } u}(\left[P(x)\right])
     $$
 
     $$
-    \left[\exists xP(x)\right]=\max_{x \text;{ takes a value in } u}(\left[P(x)\right])
+    \left[\exists xP(x)\right]=\max_{x \text{ takes a value in } u}(\left[P(x)\right])
     $$
 
 ---
@@ -309,12 +308,12 @@ We now turn to the question of how truth values are assigned to statements invol
     Therefore, $\neg\left(P\land Q\right)\equiv\left(\neg P \lor \neg Q\right)$.
 
   - **Example 2.7.2**  
-    Let $P$ and $Q$ be two mathematical statements, then $\neg\left(P\Rightarrow Q\right)\equiv P \land \neg Q$.
+    Let $P$ and $Q$ be two mathematical statements, then $\neg\left(P\implies Q\right)\equiv P \land \neg Q$.
     $$
     \begin{array}{c|c|c|c|c|c} P&Q&P\Rightarrow Q&\neg\left(P\Rightarrow Q\right)&\neg Q&\left(P \land \neg Q\right) \\ 1&1&1&0&0&0 \\ 1&0&0&1&1&1 \\ 0&1&1&0&0&0 \\ 0&0&1&0&1&0 \end{array}
     $$
 
-    Therefore, $\neg\left(P\Rightarrow Q\right)\equiv P \land \neg Q$.
+    Therefore, $\neg\left(P\implies Q\right)\equiv P \land \neg Q$.
 
   - **Example 2.7.3**  
     Determine if $\forall xP(x)\equiv\neg\exists x\left(\neg P(x)\right)$.
@@ -459,7 +458,8 @@ We now turn to the question of how truth values are assigned to statements invol
       If $P$ is true and $Q$ is false, then $A$ is true and $B$ is false, then $A,B$ are not equivalent.
 
   - **Example 2.7.8**
-    Are $A:(P\Rightarrow Q)\and R,B:P\Rightarrow(Q\and R)$ are equivalent?
+    Are $A:(P\implies Q)\and R,B:P\implies(Q\and R)$ are equivalent?
 
     - **Solution 2.7.8.1**
       If $P$ is false, then $B$ is always true. In this case, if $R$ is false, $A$ is false, then $A,B$ are not equivalent.
+
