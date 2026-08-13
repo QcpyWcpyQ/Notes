@@ -320,11 +320,10 @@ We now turn to the question of how truth values are assigned to statements invol
   - **Example 2.7.3**  
     Determine if $\forall xP(x)\equiv\neg\exists x\left(\neg P(x)\right)$.
 
-    - **Solution:** 
+    - **Solution 2.7.3.1**
       We consider two possible cases for the truth value of $\forall xP(x)$ in any given context $u$:
 
       **Case 1:** If $\forall xP(x)$ is true, then $\left[\forall xP(x)\right]=1$. This implies that $[P(x)]=1$ for all $x$ in $u$. Consequently, the truth value of its negation is $\left[\neg P(x)\right]=1-[P(x)]=0$ for all $x$ in $u$. Taking the maximum over all $x$, we get:
-
       $$
       \left[\exists x(\neg P(x))\right]=\max_{x}(\left[\neg P(x)\right])=0
       $$
@@ -335,7 +334,7 @@ We now turn to the question of how truth values are assigned to statements invol
       \left[\neg\exists x\left(\neg P(x)\right)\right]=1-0=1
       $$
 
-      **Case 2:** If $\forall xP(x)$ is false, then $\left[\forall xP(x)\right]=0$. This implies that there exists at least one element $x_0$ in $u$ such that $[P(x_0)]=0$. For this specific element, we have $\left[\neg P(x_0)\right]=1-[P(x_0)]=1$. Since there is at least one element where $\neg P(x)$ is true, taking the maximum yields:
+      **Case 2:** If $\forall xP(x)$ is false, then $\left[\forall xP(x)\right]=0$. This implies that there exists at least one element $x_0$ in $u$ such that $\left[P\left(x_0\right)\right]=0$. For this specific element, we have $\left[\neg P\left(x_0\right)\right]=1-\left[P\left(x_0\right)\right]=1$. Since there is at least one element where $\neg P(x)$ is true, taking the maximum yields:
       $$
       \left[\exists x(\neg P(x))\right]=\max_{x}(\left[\neg P(x)\right])=1
       $$
@@ -353,3 +352,115 @@ We now turn to the question of how truth values are assigned to statements invol
       $$
 
       By Definition 2.7, we conclude that $\forall xP(x)\equiv\neg\exists x\left(\neg P(x)\right)$.
+
+  - **Example 2.7.4**
+    Let $P,Q$ and $R$ be three mathematical statements, we want to prove that the propositions
+    $$
+    \begin{aligned}
+    
+    &A:P\Rightarrow \left(Q\Rightarrow R\right)\\
+    &B:\left(P\and Q\right)\Rightarrow R
+    
+    \end{aligned}
+    $$
+    are equivalent. 
+
+    - **Solution 2.7.4.1**
+      We have
+
+    $$
+    \begin{array}{c|c|c|c|c|c|c}
+    
+    P&Q&R&Q\Rightarrow R&P\and Q&P\Rightarrow \left(Q\Rightarrow R\right)&\left(P\and Q\right)\Rightarrow R \\
+    1&1&1&1&1&1&1 \\
+    1&1&0&0&1&0&0 \\
+    1&0&1&1&0&1&1 \\
+    1&0&0&1&0&1&1 \\
+    0&1&1&1&0&1&1 \\
+    0&1&0&0&0&1&1 \\
+    0&0&1&1&0&1&1 \\
+    0&0&0&1&0&1&1
+    
+    \end{array}
+    $$
+
+    Therefore, $A\equiv B$.
+
+  - **Example 2.7.5**
+    Let $P,Q$ and $R$ be three mathematical statements, we want to prove that the propositions
+    $$
+    \begin{aligned}
+    
+    &A:\left(P\Rightarrow Q\right)\and\left(Q\Rightarrow R\right)\\
+    &B:\left(\neg P\or Q\right)\and\left(Q \or R\right)
+    
+    \end{aligned}
+    $$
+    are equivalent.
+
+    - **Solution 2.7.5.1**
+      **Case 1**: $A$ is false if and only if
+      $$
+      (P\Rightarrow Q)\text{ is false or } (\neg Q\Rightarrow R)\text{ is false}
+      $$
+      which means
+      $$
+      \begin{pmatrix}
+      P\text{ is true}\\
+      \text{and} \\
+      Q\text{ is false}
+      \end{pmatrix} \text{or}
+      
+      \begin{pmatrix}
+      Q\text{ is false}\\
+      \text{and} \\
+      R\text{ is false}
+      \end{pmatrix}
+      $$
+      **Case 2**: $B$ is false if and only if
+      $$
+      \left(\neg P\or Q\right)\text{ is false or }\left(Q \or R\right)\text{ is false}
+      $$
+      which means
+      $$
+      \begin{pmatrix}
+      P\text{ is true}\\
+      \text{and} \\
+      Q\text{ is false}
+      \end{pmatrix} \text{or}
+      
+      \begin{pmatrix}
+      Q\text{ is false}\\
+      \text{and} \\
+      R\text{ is false}
+      \end{pmatrix}
+      $$
+      In conclusion, both propositions are false exactly in the same cases.
+      Therefore, $A\equiv B$.
+
+  - **Example 2.7.6**
+    Let $P,Q$ and $R$ be three mathematical statements, we want to prove that the propositions
+    $$
+    \begin{aligned}
+    
+    &A:P\Rightarrow(Q\Rightarrow R) \\
+    &B:(P\Rightarrow Q)\Rightarrow R
+    
+    \end{aligned}
+    $$
+    are not equivalent.
+
+    - **Solution 2.7.6.1**
+      if $P$ is false, $Q$ is true and $R$ is false, then the proposition $A$ is true and the proposition $B$ is false, then $A,B$ are not equivalent.
+
+  - **Example 2.7.7**
+    Are $A:\neg(P\and Q),B:\neg P\and \neg Q$ are equivalent?
+
+    - **Solution 2.7.7.1**
+      If $P$ is true and $Q$ is false, then $A$ is true and $B$ is false, then $A,B$ are not equivalent.
+
+  - **Example 2.7.8**
+    Are $A:(P\Rightarrow Q)\and R,B:P\Rightarrow(Q\and R)$ are equivalent?
+
+    - **Solution 2.7.8.1**
+      If $P$ is false, then $B$ is always true. In this case, if $R$ is false, $A$ is false, then $A,B$ are not equivalent.
