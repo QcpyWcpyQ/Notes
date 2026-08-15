@@ -51,7 +51,7 @@ The second logical connective that allows us to combine mathematical statements 
   Suppose that $P$ and $Q$ represent formed mathematical statements. A disjunction is a new mathematical statement of the form $P \lor Q$, where $\lor$ is the symbol we use for the word "$\text{or}$". 
 
   - **Example 3.1**
-    Consider the basic propositions "$0=i$" and "$0<i$" that we can form the disjunction $(0=i)\lor(0<i)$ commonly expressed as $0\leq i$.
+    Consider the basic propositions "$0=i$" and "$0<i$" that we can form the disjunction $(0=i)\lor(0<i)$ commonly expressed as $0\leqslant i$.
 
   - **Example 3.2**
     Consider the propositions "$\sqrt 2^{\sqrt2}\text{ is irrational}$" and "$\sqrt2^{\sqrt2^{\sqrt2}}\text{ is irrational}$" then we can form the disjunction
@@ -61,7 +61,7 @@ The second logical connective that allows us to combine mathematical statements 
   $$
 
   - **Example 3.3**
-    Consider the basic propositions "$0=i$" , "$0<i$" and "$i<n$" then we can form first the disjunction $(0=i)\lor(0<i)$, that is, $0\leq i$ and then we can form the conjunction $(0\leq i)\land(i<n)$, that is, $0\leq i<n$.
+    Consider the basic propositions "$0=i$" , "$0<i$" and "$i<n$" then we can form first the disjunction $(0=i)\lor(0<i)$, that is, $0\leqslant i$ and then we can form the conjunction $(0\leqslant i)\land(i<n)$, that is, $0\leqslant i<n$.
 
 -----
 
@@ -110,9 +110,9 @@ The fourth logical connective that allows us to combine and form new mathematica
   to obtain a new mathematical statement called equivalence of the form $P\iff Q$, where $\iff$ is the symbol we use for the phrase "$\text{if and only if}$". 
 
   - **Example 5.1**
-    Consider the propositions "$\left\lvert x\right\rvert\leq 3$" and "$-3\leq x\leq 3$" then we can form the new mathematical statement "$\left\lvert x\right\rvert\leq 3\text{ if and only if }-3\leq x\leq 3$" and using the formal language
+    Consider the propositions "$\left\lvert x\right\rvert\leqslant 3$" and "$-3\leqslant x\leqslant 3$" then we can form the new mathematical statement "$\left\lvert x\right\rvert\leqslant 3\text{ if and only if }-3\leqslant x\leqslant 3$" and using the formal language
     $$
-    \left\lvert x\right\rvert\leq 3\iff -3\leq x\leq 3
+    \left\lvert x\right\rvert\leqslant 3\iff -3\leqslant x\leqslant 3
     $$
 
 -----
