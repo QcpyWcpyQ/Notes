@@ -107,12 +107,12 @@ The fourth logical connective that allows us to combine and form new mathematica
   $$
   (P\implies Q)\land(Q\implies P)
   $$
-  to obtain a new mathematical statement called equivalence of the form $P\Leftrightarrow Q$, where $\Leftrightarrow$ is the symbol we use for the phrase "$\text{if and only if}$". 
+  to obtain a new mathematical statement called equivalence of the form $P\iff Q$, where $\iff$ is the symbol we use for the phrase "$\text{if and only if}$". 
 
   - **Example 5.1**
     Consider the propositions "$\left\lvert x\right\rvert\leq 3$" and "$-3\leq x\leq 3$" then we can form the new mathematical statement "$\left\lvert x\right\rvert\leq 3\text{ if and only if }-3\leq x\leq 3$" and using the formal language
     $$
-    \left\lvert x\right\rvert\leq 3\Leftrightarrow -3\leq x\leq 3
+    \left\lvert x\right\rvert\leq 3\iff -3\leq x\leq 3
     $$
 
 -----

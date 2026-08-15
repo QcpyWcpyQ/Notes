@@ -51,8 +51,10 @@ Proofs are the primary means by which mathematical truth is established. The pur
   If we know that $P \lor Q$ is true, and we can prove $R$ from $P$, and also prove $R$ from $Q$, we may conclude $R$:    
   - **Example 4.1**  
     Suppose a natural number is either even or odd, and we want to prove that $n^2$ is even. We divide the argument into two cases: if $n$ is even, $n^2$ is even; if $n$ is odd, $n^2$ is even. Since one of these cases must be true, $n^2$ is even in either case.    
+    
   - **Example 4.2**  
     Proof: $P\land\left(Q\lor R\right)\equiv\left(P\land Q\right)\lor\left(P\land R\right)$      
+    
     - **Solution 4.2.1**  
       We want to prove $\forall a,b,c\in\mathbb R,\min\{a,\max\{b,c\}\}=\max\{\min\{a,b\},\min\{a,c\}\}$. Let       
       $$
@@ -79,8 +81,27 @@ Proofs are the primary means by which mathematical truth is established. The pur
       $$
       then $\min\{a,b\}\leq\min\{a,\max\{b,c\}\}$.       
       The other inequality is almost the same. Then $M_2=\max\{\min\{a,b\},\min\{a,c\}\}$.    
+      
+    - **Solution 4.2.2**
+      We want to prove $\forall a,b,c\in\mathbb R,\min\{a,\max\{b,c\}\}=\max\{\min\{a,b\},\min\{a,c\}\}$.
+      Suppose $a,b,c\in\left\{0,1\right\}$. We split into two cases depending on the value of $a$.
+      **Case 1** $a=0$
+      $$
+      \text{LHS}=\min\left\{0,\max\left\{b,c\right\}\right\}=0 \\
+      \text{RHS}=\max\left\{\min\left\{0,b\right\},\min\left\{0,c\right\}\right\}=\max\left\{0,0\right\}=0
+      $$
+      Thus $\text{LHS}=\text{RHS}$.
+      **Case 2** $a=1$
+      $$
+      \text{LHS}=\min\left\{1,\max\left\{b,c\right\}\right\}=\max\left\{b,c\right\} \\
+      \text{RHS}=\max\left\{\min\left\{1,b\right\},\min\left\{1,c\right\}\right\}=\min\left\{b,c\right\}
+      $$
+      Thus $\text{LHS}=\text{RHS}$.
+      Since equality holds for $a=0$ and $a=1$, the identity is true for all $a,b,c\in\left\{0,1\right\}$.
+    
   - **Example 4.3**  
     Let $a_1,a_2,\cdots,a_7\in\mathbb Z$, prove that among these seven integers, one can always choose four numbers whose sum is even.      
+    
     - **Solution 4.3.1**  
       Suppose $a_1,a_2,\cdots,a_7\in\mathbb Z$. Let $K$ be the number of odd integers among $a_1,a_2,\cdots,a_7$.       
       If $4\leq K\leq 7$, then take $4$ of these odd integers, their sum is even:       
@@ -92,6 +113,7 @@ Proofs are the primary means by which mathematical truth is established. The pur
       2a+2b+2c+2d=2(a+b+c+d)
       $$
       In both cases, we obtain that we can always choose four numbers whose sum is even.    
+    
   - **Example 4.4**  
     Prove that $\forall n\in\mathbb Z$, if $n$ is odd, then $3n$ is odd.      
     - **Solution 4.4.1**  
@@ -104,10 +126,12 @@ Proofs are the primary means by which mathematical truth is established. The pur
       \end{aligned}       
       $$
       Since $3k+1$ is an integer, $3n$ is odd.    
+    
   - **Example 4.5**  
     For every $a,b,c\in\mathbb Z$, prove that if $a\mid b$ and $b\mid c$, then $a\mid c$.      
     - **Solution 4.5.1**  
       Suppose $a,b,c\in\mathbb Z$ and $a\mid b \land b\mid c$. Then there exist $k,q\in\mathbb Z$ such that $b=ka$ and $c=qb$. Then $c=qka$, and since $qk\in \mathbb Z$, by definition, $a\mid c$.    
+    
   - **Example 4.6**  
     Let $n\in \mathbb Z$. Prove that if $n^2$ is even, then $n$ is even.      
     - **Solution 4.6.1**  
@@ -117,10 +141,12 @@ Proofs are the primary means by which mathematical truth is established. The pur
       n^2=(2k+1)^2=4k^2+4k+1=2(2k^2+2k)+1
       $$
       is odd because $2k^2+2k$ is an integer.    
+    
   - **Example 4.7**  
     Prove that there is no smallest positive rational number.      
     - **Solution 4.7.1**  
       By contradiction, suppose there exists a smallest positive rational number $r$. Then $\frac{r}{2}$ is a smaller positive rational number. This is a contradiction because $r$ was assumed to be the smallest. Thus, there doesn't exist a smallest positive rational number.    
+    
   - **Example 4.8**  
     $\forall \epsilon>0$, prove that $\exists N\in\mathbb N$ such that $\forall n\geq N$, $\dfrac{1}{n}<\epsilon$.      
     - **Solution 4.8.1**  
