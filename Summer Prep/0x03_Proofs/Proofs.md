@@ -33,7 +33,7 @@ Proofs are the primary means by which mathematical truth is established. The pur
   - **Example 2.3**  
     Prove that $\left(\forall x\right)P(x) \lor \left(\forall x\right)Q(x)\implies \left(\forall x\right)\left( P(x)\lor Q(x)\right)$ and refute the converse implication.      
     - **Solution 2.3.1**  
-      Suppose $(\forall x)P(x) \lor $(\forall x) Q(x)$ is true, then $(\forall x)P(x)$ is true or $(\forall x)Q(x)$ is true.       
+      Suppose $(\forall x)P(x) \lor (\forall x) Q(x)$ is true, then $(\forall x)P(x)$ is true or $(\forall x)Q(x)$ is true.       
       Suppose $(\forall x)P(x)$ is true, then $\forall x, P(x)$ is true, then $\forall x, P(x)\lor Q(x)$ is true and then $\forall x, (P(x)\lor Q(x))$ is true.       
       To check that the converse is false, consider $P(x): x\text{ is even}, Q(x): x\text{ is odd}$.
 
