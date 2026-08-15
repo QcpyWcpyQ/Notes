@@ -31,7 +31,9 @@
     $$
     Therefore, $A\equiv B$.
 
-- **Example 2**
+---
+
+- **Exercise 2**
   Let $P,Q$ and $R$ be three mathematical statements, we want to prove that the propositions
   $$
   \begin{aligned}
@@ -83,7 +85,9 @@
     In conclusion, both propositions are false exactly in the same cases.
     Therefore, $A\equiv B$.
 
-- **Example 3**
+---
+
+- **Exercise 3**
   Let $P,Q$ and $R$ be three mathematical statements, we want to prove that the propositions
   $$
   \begin{aligned}
@@ -98,13 +102,17 @@
   - **Solution 3.2**
     if $P$ is false, $Q$ is true and $R$ is false, then the proposition $A$ is true and the proposition $B$ is false, then $A,B$ are not equivalent.
 
-- **Example 4**
+---
+
+- **Exercise 4**
   Are $A:\neg(P\and Q),B:\neg P\and \neg Q$ are equivalent?
 
   - **Solution 4.1**
     If $P$ is true and $Q$ is false, then $A$ is true and $B$ is false, then $A,B$ are not equivalent.
 
-- **Example 5**
+---
+
+- **Exercise 5**
   Are $A:(P\implies Q)\and R,B:P\implies(Q\and R)$ are equivalent?
 
   - **Solution 5.1**

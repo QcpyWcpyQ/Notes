@@ -17,6 +17,8 @@
     $$
     So $ab\leqslant 25$, then $ab\leqslant 25$ or $a^2+b^2<10$.    
 
+---
+
 - **Exercise 2**  
   Prove that $\left(\forall x\right)P(x) \lor \left(\forall x\right)Q(x)\implies \left(\forall x\right)\left( P(x)\lor Q(x)\right)$ and refute the converse implication.      
 
@@ -24,6 +26,8 @@
     Suppose $(\forall x)P(x) \lor (\forall x) Q(x)$ is true, then $(\forall x)P(x)$ is true or $(\forall x)Q(x)$ is true.       
     Suppose $(\forall x)P(x)$ is true, then $\forall x, P(x)$ is true, then $\forall x, P(x)\lor Q(x)$ is true and then $\forall x, (P(x)\lor Q(x))$ is true.       
     To check that the converse is false, consider $P(x): x\text{ is even}, Q(x): x\text{ is odd}$.
+
+---
 
 - **Exercise 3**  
   Proof: $P\land\left(Q\lor R\right)\equiv\left(P\land Q\right)\lor\left(P\land R\right)$      
@@ -34,7 +38,7 @@
     \begin{aligned}              
     M_1 &:= \min\{a,\max\{b,c\}\} \\       
     M_2 &:= \max\{\min\{a,b\},\min\{a,c\}\}              
-    \end{aligned}       
+    \end{aligned}
     $$
     we want to prove $M_1\leqslant M_2$ and $M_2\leqslant M_1$.        
     For the case $M_1\leqslant M_2$, by the definition of $\min$ and $\max$       
@@ -72,6 +76,8 @@
     Thus $\text{LHS}=\text{RHS}$.
     Since equality holds for $a=0$ and $a=1$, the identity is true for all $a,b,c\in\left\{0,1\right\}$.
 
+---
+
 - **Exercise 4**  
   Let $a_1,a_2,\cdots,a_7\in\mathbb Z$, prove that among these seven integers, one can always choose four numbers whose sum is even.      
 
@@ -86,7 +92,9 @@
     2a+2b+2c+2d=2(a+b+c+d)
     $$
     In both cases, we obtain that we can always choose four numbers whose sum is even.    
-  
+
+---
+
 - **Exercise 5**  
   Prove that $\forall n\in\mathbb Z$, if $n$ is odd, then $3n$ is odd.      
 
@@ -101,11 +109,15 @@
     $$
     Since $3k+1$ is an integer, $3n$ is odd.    
 
+---
+
 - **Exercise 6**  
   For every $a,b,c\in\mathbb Z$, prove that if $a\mid b$ and $b\mid c$, then $a\mid c$.      
 
   - **Solution 6.1**  
     Suppose $a,b,c\in\mathbb Z$ and $a\mid b \land b\mid c$. Then there exist $k,q\in\mathbb Z$ such that $b=ka$ and $c=qb$. Then $c=qka$, and since $qk\in \mathbb Z$, by definition, $a\mid c$.    
+
+---
 
 - **Exercise 7**  
   Let $n\in \mathbb Z$. Prove that if $n^2$ is even, then $n$ is even.      
@@ -118,15 +130,18 @@
     $$
     is odd because $2k^2+2k$ is an integer.    
 
+---
+
 - **Exercise 8**  
   Prove that there is no smallest positive rational number.      
 
   - **Solution 4.7.1**  
     By contradiction, suppose there exists a smallest positive rational number $r$. Then $\frac{r}{2}$ is a smaller positive rational number. This is a contradiction because $r$ was assumed to be the smallest. Thus, there doesn't exist a smallest positive rational number.    
 
+---
+
 - **Exercise 9**  
   $\forall \epsilon>0$, prove that $\exists N\in\mathbb N$ such that $\forall n\geqslant N$, $\dfrac{1}{n}<\epsilon$.      
-
   - **Solution 9.1**  
     Suppose $\epsilon > 0$. We will first prove that $\exists N\in\mathbb N$ such that $\dfrac{1}{N}<\epsilon$.        
     The Archimedean Property states that for any real number $x\in\mathbb R$, there exists a natural number $N\in\mathbb{N}$ such that $N>x$. By setting $x=\dfrac{1}{\epsilon}$ in the Archimedean Property, we guarantee that $\exists N \in \mathbb{N}$ satisfying $N>\dfrac{1}{\epsilon}$, and then $\epsilon >\dfrac{1}{N}$. Then if $n\geqslant N$, $\dfrac{1}{N}\geqslant\dfrac{1}{n}$ and $\dfrac{1}{n}<\epsilon$.
