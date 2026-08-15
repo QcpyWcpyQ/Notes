@@ -10,7 +10,7 @@ Notes/
     │       ├── Week 1.md
     │       └── Week 1.pdf
     ├── Lecture/
-    │   ├── 0x00_Course Introduction and General Infomation/
+    │   ├── 0x00_Course Introduction and General Information/
     │   │   ├── Course Introduction and General Information.md
     │   │   └── Course Introduction and General Information.pdf
     │   ├── 0x01_Mathematical Logic/
