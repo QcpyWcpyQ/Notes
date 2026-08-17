@@ -11,7 +11,7 @@
   $$
 
     - **Solution 1.1**
-      Since $a$ and $b$ satisfy $a+b=8$ and $ab=12$, they are the roots of the quadratic equation:
+      Since $a$ and $b$ satisfy $a+b=8$ and $ab=12$, according to Vieta's formulas, they are the roots of the quadratic equation:
       $$
       t^2 - 8t + 12 = 0
       $$
@@ -80,14 +80,14 @@
       * **Case 2:** $K \geqslant 4$. 
         There are at least 4 odd numbers available. We can choose 4 odd numbers, which can be written as $2n_1+1, 2n_2+1, 2n_3+1, 2n_4+1$ for some $n_1, n_2, n_3, n_4 \in \mathbb{Z}$. Their sum is:
         $$
-        (2n_1 + 1) + (2n_2 + 1) + (2n_3 + 1) + (2n_4 + 1) = 2n_1 + 2n_2 + 2n_3 + 2n_4 + 4 = 2(n_1 + n_2 + n_3 + n_4 + 2)
+        (2n_1 + 1) + (2n_2 + 1) + (2n_3 + 1) + (2n_4 + 1) = 2(n_1 + n_2 + n_3 + n_4 + 2)
         $$
         Since $n_1 + n_2 + n_3 + n_4 + 2 \in \mathbb{Z}$, the sum is even.
         
       * **Case 3: **$2 \leqslant K \leqslant 3$. 
         There are at least 2 odd numbers and at least 2 even numbers available. We can choose 2 even numbers ($2n_1, 2n_2$) and 2 odd numbers ($2n_3+1, 2n_4+1$) for some $n_1, n_2, n_3, n_4 \in \mathbb{Z}$. Their sum is:
         $$
-        2n_1 + 2n_2 + (2n_3 + 1) + (2n_4 + 1) = 2n_1 + 2n_2 + 2n_3 + 2n_4 + 2 = 2(n_1 + n_2 + n_3 + n_4 + 1)
+        2n_1 + 2n_2 + (2n_3 + 1) + (2n_4 + 1) = 2(n_1 + n_2 + n_3 + n_4 + 1)
         $$
         Since $n_1 + n_2 + n_3 + n_4 + 1 \in \mathbb{Z}$, the sum is even.
       
