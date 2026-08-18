@@ -5,8 +5,8 @@
   $$
   \begin{aligned}
   
-  &A:P\implies \left(Q\implies R\right)\\
-  &B:\left(P\and Q\right)\implies R
+  &A:P\implies \left(Q\implies R\right),\\
+  &B:\left(P\and Q\right)\implies R.
   
   \end{aligned}
   $$
@@ -38,8 +38,8 @@
   $$
   \begin{aligned}
   
-  &A:\left(P\implies Q\right)\and\left(Q\implies R\right)\\
-  &B:\left(\neg P\or Q\right)\and\left(Q \or R\right)
+  &A:\left(P\implies Q\right)\and\left(Q\implies R\right),\\
+  &B:\left(\neg P\or Q\right)\and\left(Q \or R\right).
   
   \end{aligned}
   $$
@@ -48,7 +48,7 @@
   - **Solution 2.2**
     **Case 1**: $A$ is false if and only if
     $$
-    (P\implies Q)\text{ is false or } (\neg Q\implies R)\text{ is false}
+    (P\implies Q)\text{ is false or } (\neg Q\implies R)\text{ is false}.
     $$
     which means
     $$
@@ -62,11 +62,11 @@
     Q\text{ is false}\\
     \text{and} \\
     R\text{ is false}
-    \end{pmatrix}
+    \end{pmatrix}.
     $$
     **Case 2**: $B$ is false if and only if
     $$
-    \left(\neg P\or Q\right)\text{ is false or }\left(Q \or R\right)\text{ is false}
+    \left(\neg P\or Q\right)\text{ is false or }\left(Q \or R\right)\text{ is false}.
     $$
     which means
     $$
@@ -80,7 +80,7 @@
     Q\text{ is false}\\
     \text{and} \\
     R\text{ is false}
-    \end{pmatrix}
+    \end{pmatrix}.
     $$
     In conclusion, both propositions are false exactly in the same cases.
     Therefore, $A\equiv B$.
@@ -92,8 +92,8 @@
   $$
   \begin{aligned}
   
-  &A:P\implies(Q\implies R) \\
-  &B:(P\implies Q)\implies R
+  &A:P\implies(Q\implies R), \\
+  &B:(P\implies Q)\implies R.
   
   \end{aligned}
   $$

@@ -21,7 +21,7 @@ Proofs are the primary means by which mathematical truth is established. The pur
 - **Definition 3: Indirect Strategy for Disjunction**  
   Another useful strategy to prove $P \lor Q$ is to proceed indirectly. Assume that one of the disjuncts is false (say $\neg P$) and then prove the other ($Q$):  
   $$
-  P \lor Q \equiv \neg P \implies Q
+  P \lor Q \equiv \neg P \implies Q.
   $$
 
 ---
@@ -50,7 +50,7 @@ Proofs are the primary means by which mathematical truth is established. The pur
 - **Definition 7: Proof by Contradiction**  
   To prove $P \implies Q$, suppose that $P$ is true and $Q$ is false ($P \land \neg Q$) and show that this assumption leads to a contradiction ($R \land \neg R$):  
   $$
-  P \implies Q \equiv (P \land \neg Q) \implies (R \land \neg R)
+  P \implies Q \equiv (P \land \neg Q) \implies (R \land \neg R).
   $$
   We have:  
   $$
@@ -73,6 +73,6 @@ Proofs are the primary means by which mathematical truth is established. The pur
     
     - We need to show that $\frac{1}{x^2+1} \le 1$ for every $x \in \mathbb{R}$. Since $0 \le x^2$ for all $x \in \mathbb{R}$, it follows that $1 \le x^2 + 1$. Because $x^2 + 1 > 0$, taking the reciprocal reverses the inequality:
       $$
-      \frac{1}{x^2+1} \le 1
+      \frac{1}{x^2+1} \le 1.
       $$
       for every $x \in \mathbb{R}$. Thus, the original statement is false.

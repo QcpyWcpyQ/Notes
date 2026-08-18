@@ -6,15 +6,15 @@
 - **Example 1.1**  
   If we have $3$ pens in a pencil case $x_1,x_2,x_3$, then  
   $$
-  B=\left\{x_1,x_2,x_3\right\}  
+  B=\left\{x_1,x_2,x_3\right\}.
   $$
   And if we consider the blue pens in a pencil case  
   $$
-  C=\left\{x\in B:x \text{ is blue}\right\}  
+  C=\left\{x\in B:x \text{ is blue}\right\}.
   $$
   For example, if $x_1$ and $x_3$ are blue pens we have that  
   $$
-  C=\left\{x_1,x_3\right\}  
+  C=\left\{x_1,x_3\right\}.
   $$
 
 ---
@@ -54,7 +54,7 @@
   &8\in A\ \times\quad\quad \left\{8,10\right\}\subseteq A\ \times \\  
   &8\in A\ \times\quad\quad \left\{\left\{8,9\right\},10\right\}\in A\ \times \\  
   &\left\{8,9\right\}\in A\ \checkmark  
-  \end{aligned}  
+  \end{aligned}
   $$
 
 ---
@@ -71,15 +71,15 @@
   Let $A$ and $B$ be two sets.   
   The **union** of $A$ and $B$, denoted $A\cup B$, is the set that contains all elements of $A$ and all elements in $B$, that is,   
   $$
-  A\cup B=\left\{x:x\in A \text{ or } x\in B\right\}  
+  A\cup B=\left\{x:x\in A \text{ or } x\in B\right\}.
   $$
   The **intersection** of $A$ and $B$, denoted $A\cap B$, is the set that contains all elements of $A$ that are also elements of $B$, that is,   
   $$
-  A\cap B=\left\{x:x\in A \text{ and } x\in B\right\}  
+  A\cap B=\left\{x:x\in A \text{ and } x\in B\right\}.
   $$
   The **difference** $A$ minus $B$, denoted $A\setminus B$, is the set that contains all elements of $A$ that are not in $B$, that is,   
   $$
-  A\setminus B=\left\{x:x\in A\text{ and }x\not\in B\right\}  
+  A\setminus B=\left\{x:x\in A\text{ and }x\not\in B\right\}.
   $$
 
 - **Example 6.1**  
@@ -89,8 +89,8 @@
   &A\cup B=\left\{a,b,c,d,e\right\} \\  
   &A\cap B=\left\{b,c\right\} \\  
   &A\setminus B=\left\{a,d,e\right\} \\  
-  &B\setminus A=\varnothing=\left\{\ \right\}  
-  \end{aligned}  
+  &B\setminus A=\varnothing=\left\{\ \right\}  .
+  \end{aligned}
   $$
 
 ---
@@ -119,26 +119,28 @@
   **Proof**  
   1. Let $x\in A$, then $x\in A$ or $x\in B$, that is,  
      $$
-     x\in A\cup B\implies A\subseteq A\cup B  
+     x\in A\cup B\implies A\subseteq A\cup B.
      $$
      Analogously, we have that $B\subseteq A\cup B$.  
      Let $x\in A\cap B$, then $x\in A$ and $x\in B$, that is,  
      $$
-     x\in A\cap B\implies A\cap B\subseteq A,B  
+     x\in A\cap B\implies A\cap B\subseteq A,B.
      $$
   2. $$
      \begin{aligned}  
      A\cup B&=\left\{x:x\in A\text{ or }x\in B\right\} \\  
      &=\left\{x:x\in B\text{ or }x\in A\right\}=B\cup A  
-     \end{aligned}  
+     \end{aligned}.
      $$
      Analogously, we have that $A\cap B=B\cap A$.  
   3. Suppose that $A\subseteq B$ and let $x\in B^\complement$, then $x\not\in B$; since $A\subseteq B$ we have that $x\not\in A$ and thus $x\in A^\complement$.  
      Therefore, $B^\complement\subseteq A^\complement$.  
   4. By definition:  
      $$
-     X^\complement=\left\{x\in X:x\not\in X\right\}=\varnothing \\  
-     \varnothing^\complement=\left\{x\in X:x\not\in\varnothing\right\}=X  
+     \begin{aligned}
+     &X^\complement=\left\{x\in X:x\not\in X\right\}=\varnothing \\  
+     &\varnothing^\complement=\left\{x\in X:x\not\in\varnothing\right\}=X.
+     \end{aligned}
      $$
   5. Let $x\in\left(A\cup B\right)^\complement$, then  
      $$
@@ -148,8 +150,8 @@
      &\iff \text{It is true that }x\not\in A \land x\not\in B \\  
      &\iff x\not\in A \text{ and }x\not\in B \\  
      &\iff x\in A^\complement\text{ and }x\in B^\complement \\  
-     &\iff x\in A^\complement\cap B^\complement  
-     \end{aligned}  
+     &\iff x\in A^\complement\cap B^\complement  .
+     \end{aligned}
      $$
      Thus $\left(A\cup B\right)^\complement=A^\complement\cap B^\complement$.  
   6. Let $x\in\left(A\cap B\right)^\complement$, then  
@@ -160,8 +162,8 @@
      &\iff \text{It is true that }x\not\in A \lor x\not\in B \\  
      &\iff x\not\in A \text{ or }x\not\in B \\  
      &\iff x\in A^\complement\text{ or }x\in B^\complement \\  
-     &\iff x\in A^\complement\cup B^\complement  
-     \end{aligned}  
+     &\iff x\in A^\complement\cup B^\complement  .
+     \end{aligned}
      $$
      Thus $\left(A\cap B\right)^\complement=A^\complement\cup B^\complement$.  
 
@@ -170,8 +172,15 @@
 - **Definition 9**  
   Let $X$ be a set. The **power set** of $X$, denoted $\mathscr P(X)$, is the set of all subsets of $X$.  
 
-- **Example 9.1**  
-  Let $X=\left\{a,b,c\right\}$, then  
-  $$
-  \mathscr P(X)=\left\{\varnothing,\left\{a\right\},\left\{b\right\},\left\{c\right\},\left\{a,b\right\},\left\{a,c\right\},\left\{b,c\right\},\left\{a,b,c\right\}\right\}
-  $$
+  - **Example 9.1**  
+    Let $X=\left\{a,b,c\right\}$, then  
+    $$
+    \mathscr P(X)=\left\{\varnothing,\left\{a\right\},\left\{b\right\},\left\{c\right\},\left\{a,b\right\},\left\{a,c\right\},\left\{b,c\right\},\left\{a,b,c\right\}\right\}.
+    $$
+  
+  - **Example 9.2**
+    Let $A$ and $B$ be sets. Prove that $\mathscr P(A)\subseteq \mathscr P(B)$, if and only if, $A\subseteq B$.
+  
+    - **Proof 9.2.1**
+      Suppose that $\mathscr P(A)\subseteq \mathscr P(B)$. Let $x\in A$ then $\left\{x\right\}\in\mathscr P(A)$ and thus $\left\{x\right\}\in\mathscr  P(B)$, therefore $x\in B$, hence $A\subseteq B$.
+      Suppose that $A\subseteq B$. Let $X\in\mathscr P(A)$ then $X\subseteq A$, that is, $X\subseteq B$, therefore $X\in\mathscr P(B)$ and thus $\mathscr P(A)\subseteq \mathscr P(B)$.

@@ -11,7 +11,7 @@
 
       The symbolic logic is:
       $$
-      p \land q
+      p \land q.
       $$
 
 ---
@@ -27,7 +27,7 @@
 
       The symbolic logic is:
       $$
-      p \lor q
+      p \lor q.
       $$
 
 ---
@@ -43,7 +43,7 @@
 
       The symbolic logic is:
       $$
-      p \lor q
+      p \lor q.
       $$
 
 ---
@@ -59,7 +59,7 @@
 
       The symbolic logic is:
       $$
-      p \implies q
+      p \implies q.
       $$
 
 ---
@@ -77,7 +77,7 @@
 
       The symbolic logic is:
       $$
-      (p \land q) \lor (r \land s)
+      (p \land q) \lor (r \land s).
       $$
 
 
@@ -93,7 +93,7 @@
 
       The symbolic logic is:
       $$
-      p
+      p.
       $$
 
 ---
@@ -109,7 +109,7 @@
 
       The symbolic logic is:
       $$
-      \neg (p \lor q)
+      \neg (p \lor q).
       $$
 
 ---
@@ -125,7 +125,7 @@
 
       The symbolic logic is:
       $$
-      \neg p \implies \neg q
+      \neg p \implies \neg q.
       $$
 
 ---
@@ -143,7 +143,7 @@
 
       The symbolic logic is:
       $$
-      (p \land q) \implies (r \lor s)
+      (p \land q) \implies (r \lor s).
       $$
 
 ---
@@ -160,7 +160,7 @@
 
       The symbolic logic is:
       $$
-      (p \land q) \implies r
+      (p \land q) \implies r.
       $$
 
 ---
@@ -168,9 +168,9 @@
 - **Exercise 11**
   Let $p$ stand for the proposition "$x^2 + 2x - 3$ is $0$" and $q$ for "$x^2 - x - 2$ is $0$". Express the following as natural sentences in English:
   $$
-  \neg p \\
-  p \land q \\
-  p \lor q
+  \neg p. \\
+  p \land q. \\
+  p \lor q.
   $$
   
     - **Solution 11.1**
@@ -190,7 +190,7 @@
     - **Solution 14.1**
       The statement can be expressed as:
       $$
-      \exists n \in \mathbb{Z}, \, k = n^2
+      \exists n \in \mathbb{Z}, \, k = n^2.
       $$
 
 ---
@@ -202,7 +202,7 @@
     - **Solution 15.1**
       The statement can be expressed as:
       $$
-      (\exists t \in \mathbb{Z}) \, m = 2t + 1
+      (\exists t \in \mathbb{Z}) \, m = 2t + 1.
       $$
 
 ---
@@ -214,7 +214,7 @@
     - **Solution 16.1**
       The statement can be expressed as:
       $$
-      (\exists k \in \mathbb{Z}), \, n = dk
+      (\exists k \in \mathbb{Z}), \, n = dk.
       $$
 
 ---
@@ -226,7 +226,7 @@
     - **Solution 17.1**
       The statement can be expressed as:
       $$
-      (\exists a \in \mathbb{Z})(\exists b \in \mathbb{Z}) \, b \neq 0, \, x = \frac{a}{b}
+      (\exists a \in \mathbb{Z})(\exists b \in \mathbb{Z}) \, b \neq 0, \, x = \frac{a}{b}.
       $$
 
 ---
@@ -238,7 +238,7 @@
     - **Solution 18.1**
       The statement can be expressed as:
       $$
-      (\forall a, b \in \mathbb{Z}) \, b \neq 0 \implies x \neq \frac{a}{b}
+      (\forall a, b \in \mathbb{Z}) \, b \neq 0 \implies x \neq \frac{a}{b}.
       $$
 
 ---
@@ -250,7 +250,7 @@
     - **Solution 19.1**
       The statement can be expressed as:
       $$
-      (\exists c \in \mathbb{R}) \, f(c) = 0
+      (\exists c \in \mathbb{R}) \, f(c) = 0.
       $$
 
 ---
@@ -262,7 +262,7 @@
     - **Solution 20.1**
       The statement can be expressed as:
       $$
-      (\exists M \in \mathbb{R}^+) (\forall x \in \mathbb{R}) \, f(x) \leqslant M
+      (\exists M \in \mathbb{R}^+) (\forall x \in \mathbb{R}) \, f(x) \leqslant M.
       $$
 
 ---
@@ -274,7 +274,7 @@
     - **Solution 21.1**
       The statement can be expressed as:
       $$
-      (\exists m \in \mathbb{R}) (\forall x \in \mathbb{R}) \, f(x) \geqslant m
+      (\exists m \in \mathbb{R}) (\forall x \in \mathbb{R}) \, f(x) \geqslant m.
       $$
 
 ---
@@ -286,7 +286,7 @@
     - **Solution 22.1**
       The statement can be expressed as:
       $$
-      (\forall x_1, x_2), \, x_1 < x_2 \implies f(x_1) < f(x_2)
+      (\forall x_1, x_2), \, x_1 < x_2 \implies f(x_1) < f(x_2).
       $$
 
 ---
@@ -298,7 +298,7 @@
     - **Solution 23.1**
       The statement can be expressed as:
       $$
-      (\forall x \in \mathbb{R}) \, f(x) = g(x)
+      (\forall x \in \mathbb{R}) \, f(x) = g(x).
       $$
 
 ---
@@ -310,7 +310,7 @@
     - **Solution 24.1**
       The statement can be expressed as:
       $$
-      (\exists x \in \mathbb{R}) \, f(x) \neq g(x)
+      (\exists x \in \mathbb{R}) \, f(x) \neq g(x).
       $$
 
 ---
@@ -322,7 +322,7 @@
     - **Solution 25.1**
       The statement can be expressed as:
       $$
-      (\exists \text{rigid motion } T) \, T(\Delta_1) = \Delta_2
+      (\exists \text{rigid motion } T) \, T(\Delta_1) = \Delta_2.
       $$
 
 ---
@@ -338,22 +338,22 @@
     - **Solution 26.1**
       For statement (a), it can be expressed as:
       $$
-      (\forall x \in \mathbb{R}) \, f(x) \neq 0
+      (\forall x \in \mathbb{R}) \, f(x) \neq 0.
       $$
 
     - **Solution 26.2**
       For statement (b), using the unique existential quantifier $\exists!$:
       $$
-      (\exists! x) \, f(x) = 0
+      (\exists! x) \, f(x) = 0.
       $$
 
       Alternatively, without using $\exists!$:
       $$
-      (\exists x)(\forall y) \, (f(x) = 0 \land (y \neq x \implies f(y) \neq 0))
+      (\exists x)(\forall y) \, (f(x) = 0 \land (y \neq x \implies f(y) \neq 0)).
       $$
 
     - **Solution 26.3**
       For statement (c), it can be expressed as:
       $$
-      (\exists x)(\exists z)(\forall y) \, (x \neq z \land f(x) = 0 \land f(z) = 0 \land (y \neq x \land y \neq z \implies f(y) \neq 0))
+      (\exists x)(\exists z)(\forall y) \, (x \neq z \land f(x) = 0 \land f(z) = 0 \land (y \neq x \land y \neq z \implies f(y) \neq 0)).
       $$
