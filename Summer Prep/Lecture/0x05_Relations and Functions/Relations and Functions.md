@@ -92,5 +92,5 @@
   - **Example 7.1**     
     1. Let $X$ be a set. The **identity function** on $X$ is the function $\mathrm{id}_x\colon X\to X$ given by $\mathrm{id}_x(x)=x$.     
     2. Let $X$ and $Y$ be sets and $c\in Y$. The **constant function** with value $c$ is the function $\mathrm K_c\colon X\to Y$ given by $\mathrm K_c(x)=c$.     
-    3. Let $X$ be a set and $A\subseteq X$. The **inclusion function** of $A$ in $X$ is the function $\iota\colon A\to X$ (or $\iota\colon A\hookrightarrow X$) given by $\iota(x)=x for all x\in A$.     
+    3. Let $X$ be a set and $A\subseteq X$. The **inclusion function** of $A$ in $X$ is the function $\iota\colon A\to X$ (or $\iota\colon A\hookrightarrow X$) given by $\forall x\in A,\iota(x)=x$.     
     4. If $f\colon X\to Y$ is a function and $A\subseteq X$, the **restriction** of $f$ to $A$ is the function $f \big|_A\colon A\to Y$ given by $f\big|_A(x)=f(x)$ for all $x\in A$.
