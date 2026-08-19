@@ -203,7 +203,7 @@
   $$
   g(n) = \begin{cases} \frac{n - 1}{2}, & \text{if } n \text{ is odd}, \\ -\frac{n}{2}, & \text{if } n \text{ is even}, \end{cases}
   $$
-  is a bijection. Is it invertible?, If so, find its inverse.
+  is a bijection. Is it invertible?, If so, find its invgerse.
 
   - **Solution 4.1**
     * **Injective:** Let $n_1, n_2 \in \mathbb{N}$ such that $g(n_1) = g(n_2)$. We analyze the signs of the outputs:
