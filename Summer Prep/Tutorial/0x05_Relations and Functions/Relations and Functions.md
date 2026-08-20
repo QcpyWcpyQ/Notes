@@ -566,25 +566,110 @@
 
     * **(a)** To be reflexive, the relation must contain $(1,1), (2,2), (3,3),$ and $(4,4)$. To violate symmetry, we add a directional pair without its inverse, such as $(1,2)$ without $(2,1)$:
       $$
-      R = \{(1, 1), (2, 2), (3, 3), (4, 4), (1, 2)\}
+      R = \{(1, 1), (2, 2), (3, 3), (4, 4), (1, 2)\}.
       $$
 
     * **(b)** To violate reflexivity, at least one diagonal element must be missing (e.g., $(1,1) \notin R$). To maintain symmetry, any ordered pair must have its coordinates flipped within the set:
       $$
-      R = \{(1, 2), (2, 1)\}
+      R = \{(1, 2), (2, 1)\}.
       $$
 
     * **(c)** To form an equivalence relation with exactly two classes, we can partition $A$ into two disjoint non-empty subsets, for instance, $A_1 = \{1, 2\}$ and $A_2 = \{3, 4\}$. The relation is constructed by taking $(A_1 \times A_1) \cup (A_2 \times A_2)$:
       $$
-      R = \{(1, 1), (1, 2), (2, 1), (2, 2), (3, 3), (3, 4), (4, 3), (4, 4)\}
+      R = \{(1, 1), (1, 2), (2, 1), (2, 2), (3, 3), (3, 4), (4, 3), (4, 4)\}.
       $$
       Explicitly rewritten for verification:
       $$
-      R = \{(1, 1), (1, 2), (2, 1), (2, 2), (3, 3), (3, 4), (4, 3), (4, 4)\}
+      R = \{(1, 1), (1, 2), (2, 1), (2, 2), (3, 3), (3, 4), (4, 3), (4, 4)\}.
       $$
 
     * **(d)** A partial order must be reflexive, antisymmetric, and transitive. The standard total order relation "less than or equal to" on integers satisfies this. Restricting it to $A$ yields:
       $$
-      R = \{(1, 1), (2, 2), (3, 3), (4, 4), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)\}
+      R = \{(1, 1), (2, 2), (3, 3), (4, 4), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)\}.
       $$
       This relation is distinctly different from the pure equality relation because it contains pairs where $x \neq y$ (such as $(1,2)$).
+
+---
+
+- **Exercise 21**
+  Let $f\colon \mathbb R\to \mathbb R$, defined by $f(x)=x^3+2$. Prove that $f$ is bijective.
+  
+  - **Proof 21.1**
+  
+    - **Injectivity** Suppose $x,y\in \mathbb R$, suppose $f(x)=f(y)$, we want to prove that $x=y$. Then
+      $$
+      \begin{aligned}
+      
+      f(x)=f(y)&\iff x^3+2=y^3+2 \\
+      &\iff x^3=y^3 \\
+      &\iff x^3-y^3=0 \\
+      &\iff (x-y)\left(x^2+xy+y^2\right)=0=(x-y)\left(\left(x+\dfrac y2\right)^2+\left(\dfrac{\sqrt 3}{2}y\right)^2\right) \\
+      &\iff x=y\lor \left(\left(x+\dfrac y2\right)^2+\left(\dfrac{\sqrt 3}{2}y\right)^2\right)=0 \\
+      &\iff x=y\lor (x=0\land y=0).
+      
+      \end{aligned}
+      $$
+      In any case $x=y$. Then $f$ is injective.
+  
+    - **Surjectivity** Suppose $y\in\mathbb R$. We want to prove $\exist x\in\mathbb R$ such that $x^3+2=y\iff x^3=y-2$.
+      $$
+      \begin{aligned}
+      
+      x:=\sqrt[3]{y-2} \implies f(x)=\left(\sqrt[3]{y-2}\right)^3+2=y-2+2=y.
+      
+      \end{aligned}
+      $$
+      
+    
+    Thus $f$ is bijective.
+
+---
+
+- **Exercise 22**
+  Let $f\colon \mathbb Z\to \mathbb Z$, defined by $f(n)=3n+1$. Is $f$ injective? Is $f$ surjective? Is $f$ bijective?
+  - **Solution**
+    - **Injectivity** Suppose $n,m\in \mathbb Z,f(n)=f(m)$ By definition of $f$, $3n+1=3m+1\implies 3n=3m\implies n=m$.
+    - **Surjective** Suppose $y\in\mathbb Z$. We want to find $n\in\mathbb Z$ such that $f(n)=m=3n+1\implies \dfrac{m-1}3=n$.
+      By contradiction. If $n\in \mathbb Z$ such that $f(n)=3$ then $n=\dfrac 23\not\in \mathbb Z$. Then there doesn't exist $n\in\mathbb Z$ such that $f(n)=3$. Then $3\not\in \text{Im}f\implies f$ is not surjective. Thus $f$ is not bijective.
+
+---
+
+- **Exercise 23**
+  Let $f\colon X\to Y$ be a function. Prove that $f$ is injective $\iff$ For every set $Z$ and for every pair of functions $g,h\colon Z\to X$, if $f\circ g=f\circ h\implies g=h$.
+
+  - **Proof 23.1**
+    Suppose $f\colon X\to Y$ a function.
+
+    ($\Longrightarrow$) Suppose $f$ is injective. Suppose $Z$ is a set, $g,h\colon Z\to X$ such that $f\circ g=f\circ h\implies\forall z\in Z,(f\circ g)(z)=(f\circ h)(z)$. Then $f(g(z))=g(h(z))$. By the definition of injection, $g(z)=h(z)$ for all $z\in Z$ thus $g=h$.
+    
+    $(\Longleftarrow)$ Assume that for every set $Z$ and for every pair of functions $g, h \colon Z \rightarrow X$, $f \circ g = f \circ h \implies g = h$ holds. We need to show that $f$ is injective.
+    Let $x_1, x_2 \in X$ be arbitrary elements in the domain such that:
+    $$
+    f(x_1) = f(x_2)
+    $$
+    Since our hypothesis holds true for any choice of set $Z$, let us choose $Z = \{*\}$ to be a singleton set containing a single element.  
+    We define two functions $g, h \colon \{*\} \rightarrow X$ by their assignments:
+    $$
+    g(*) = x_1 \quad \text{and} \quad h(*) = x_2
+    $$
+    Now, evaluate the compositions $f \circ g$ and $f \circ h$ on the single element $* \in Z$:
+    $$
+    (f \circ g)(*) = f(g(*)) = f(x_1)
+    $$
+    
+    $$
+    (f \circ h)(*) = f(h(*)) = f(x_2)
+    $$
+    
+    Since we assumed $f(x_1) = f(x_2)$, it follows that $(f \circ g)(*) = (f \circ h)(*)$. Since the domain contains only $*$, this implies:
+    $$
+    f \circ g = f \circ h
+    $$
+    By our hypothesis, this condition guarantees that $g = h$.  
+    By definition of function equality, $g = h \implies g(*) = h(*)$.  
+    Substituting our definitions back gives:
+    $$
+    x_1 = x_2
+    $$
+    Thus, $f(x_1) = f(x_2) \implies x_1 = x_2$ for any arbitrary elements, proving that $f$ is injective.
+    The proof is complete.

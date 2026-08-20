@@ -1,7 +1,6 @@
 ## Week 2
 
 - **Problem 1**
-  Indexed Families of Sets and Closures
   (a) Let $A_n = \{x \in \mathbb{Z} \mid |x| > n\}$ for each $n \in \mathbb{N}$. Find $\bigcap_{n \in \mathbb{N}} A_n,\bigcup_{n \in \mathbb{N}} A_n,\bigcap_{n \in \mathbb{N}} A_n^\complement,\bigcup_{n \in \mathbb{N}} A_n^\complement$.
   
   
@@ -50,7 +49,6 @@
 ---
 
 - **Problem 2**
-  Equivalence Relation on Polynomials
   Let $\mathbb{R}[x]$ denote the set of all polynomials with real coefficients. Define a relation $\sim$ on $\mathbb{R}[x]$ by
   $$
   f \sim g \iff f(0) = g(0).
@@ -59,14 +57,14 @@
   (a) Prove that $\sim$ is an equivalence relation.
   (b) Describe the equivalence class of the polynomial $x^2 + x + 3$.
   (c) Prove that for all $f, g \in \mathbb{R}[x]$, $f \sim g \iff x \mid (f - g)$.
-
+  
   - **Solution 2.1**
     **Part (a):**
     * **Reflexive:** Let $f \in \mathbb{R}[x]$. Since $f(0) = f(0)$ is a basic identity, it follows directly from the definition that $f \sim f$.
     * **Symmetric:** Let $f, g \in \mathbb{R}[x]$ such that $f \sim g$. By definition, this means $f(0) = g(0)$. Since equality is symmetric, $g(0) = f(0)$, which implies $g \sim f$.
     * **Transitive:** Let $f, g, h \in \mathbb{R}[x]$ such that $f \sim g$ and $g \sim h$. By definition, $f(0) = g(0)$ and $g(0) = h(0)$. By transitivity of numerical equality, $f(0) = h(0)$, which implies $f \sim h$.
     Since $\sim$ is reflexive, symmetric, and transitive, it is an equivalence relation.
-
+  
   - **Solution 2.2**
     **Part (b):**
     Let $p(x) = x^2 + x + 3$. Evaluating this polynomial at $0$ gives $p(0) = 0^2 + 0 + 3 = 3$.  
@@ -76,7 +74,7 @@
     $$
     [x^2 + x + 3] = \{f \in \mathbb{R}[x] \mid f(0) = 3\} = \{x \cdot q(x) + 3 \mid q(x) \in \mathbb{R}[x]\}
     $$
-
+  
   - **Solution 2.3**
     **Part (c):**
     **Proof:**
@@ -90,7 +88,7 @@
     f(x) - g(x) = x(q_1(x) - q_2(x))
     $$
     Since $q_1(x) - q_2(x) \in \mathbb{R}[x]$, there exists a polynomial $h = q_1 - q_2$ such that $f - g = x \cdot h$. By definition of divisibility, this means $x \mid (f - g)$.
-
+  
     $(\Longleftarrow)$ Assume $x \mid (f - g)$. By definition of divisibility, there exists a polynomial $h \in \mathbb{R}[x]$ such that:
     $$
     f(x) - g(x) = x \cdot h(x)
@@ -105,7 +103,6 @@
 ---
 
 - **Problem 3**
-  Degree of Polynomials and Equivalence
   Let $\mathbb{R}[x] \setminus \{0\}$ denote the set of all nonzero polynomials with real coefficients. Recall that if
   $$
   f(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0, \quad a_n \neq 0,
@@ -123,14 +120,14 @@
   Prove that this relation is well-defined, i.e., that it does not depend on the choice of representatives.
   (d) Prove that $\preceq$ is a partial order on the set of equivalence classes.
   (e) Describe the first several equivalence classes in this order.
-
+  
   - **Solution 3.1**
     **Part (a):**
     * **Reflexive:** Let $f \in \mathbb{R}[x] \setminus \{0\}$. Since $\deg f = \deg f$ is an identity, it follows directly from the definition that $f \sim f$.
     * **Symmetric:** Let $f, g \in \mathbb{R}[x] \setminus \{0\}$ such that $f \sim g$. By definition, this means $\deg f = \deg g$. Since equality is symmetric, $\deg g = \deg f$, which implies $g \sim f$.
     * **Transitive:** Let $f, g, h \in \mathbb{R}[x] \setminus \{0\}$ such that $f \sim g$ and $g \sim h$. By definition, $\deg f = \deg g$ and $\deg g = \deg h$. By transitivity of numerical equality, $\deg f = \deg h$, which implies $f \sim h$.
     Since $\sim$ is reflexive, symmetric, and transitive, it is an equivalence relation.
-
+  
   - **Solution 3.2**
     **Part (b):**
     Let $f \in \mathbb{R}[x] \setminus \{0\}$ be a polynomial with $\deg f = n$.  
@@ -142,7 +139,7 @@
     $$
     [f] = \{a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0 \mid a_i \in \mathbb{R}, a_n \neq 0\}
     $$
-
+  
   - **Solution 3.3**
     **Part (c):**
     **Proof:**
@@ -164,7 +161,7 @@
     \deg f_2 \le \deg g_2
     $$
     By definition of the relation, this means $[f_2] \preceq [g_2]$. Thus, the truth value of the relation does not depend on the choice of representatives, meaning the relation is well-defined.
-
+  
   - **Solution 3.4**
     **Part (d):**
     **Proof:**
@@ -173,7 +170,7 @@
     * **Antisymmetric:** Let $[f], [g] \in E$ such that $[f] \preceq [g]$ and $[g] \preceq [f]$. By definition, this implies $\deg f \le \deg g$ and $\deg g \le \deg f$. By the properties of the standard order relation on integers, this means $\deg f = \deg g$. By definition of the equivalence relation, $f \sim g$, which implies $[f] = [g]$.
     * **Transitive:** Let $[f], [g], [h] \in E$ such that $[f] \preceq [g]$ and $[g] \preceq [h]$. By definition, this yields $\deg f \le \deg g$ and $\deg g \le \deg h$. By the transitivity of numerical inequalities, $\deg f \le \deg h$, which means $[f] \preceq [h]$.
     Since the relation $\preceq$ is reflexive, antisymmetric, and transitive, it is a partial order.
-
+  
   - **Solution 3.5**
     **Part (e):**
     The degree of a nonzero polynomial can be any non-negative integer $n \in \{0, 1, 2, 3, \dots\}$. The equivalence classes are ordered according to their degrees:
@@ -198,13 +195,12 @@
 ---
 
 - **Problem 4**
-  Bijectivity and Inversibility of a Piecewise Function
   Prove that the function $g \colon \mathbb{N} \rightarrow \mathbb{Z}$ defined by
   $$
   g(n) = \begin{cases} \frac{n - 1}{2}, & \text{if } n \text{ is odd}, \\ -\frac{n}{2}, & \text{if } n \text{ is even}, \end{cases}
   $$
   is a bijection. Is it invertible?, If so, find its inverse.
-
+  
   - **Solution 4.1**
     * **Injective:** Let $n_1, n_2 \in \mathbb{N}$ such that $g(n_1) = g(n_2)$. We analyze the signs of the outputs:
       * If $n$ is odd, $n \ge 1 \implies n - 1 \ge 0 \implies g(n) \ge 0$.
@@ -231,11 +227,10 @@
 ---
 
 - **Problem 5**
-  Partitions and Preimages/Images
   Suppose $f \colon A \rightarrow B$ is a function, $\{B_i\}_{i \in I}$ is a partition of $B$, and $\{A_i\}_{i \in I}$ is a partition of $A$. Prove that
-  (a) If $f$ is surjective, then $\{f^{-1}(B_i)\}_{i \in I}$ is a partition of $A$.
-  (b) If $f$ is injective, then $\{f(A_i)\}_{i \in I}$ is a partition of $B$.
-
+  (a) If $f$ is surjective; then, $\{f^{-1}(B_i)\}_{i \in I}$ is a partition of $A$.
+  (b) If $f$ is injective; then, $\{f(A_i)\}_{i \in I}$ is a partition of $f(A)$.
+  
   - **Solution 5.1**
     **Part (a):**
     By definition, $\{B_i\}_{i \in I}$ being a partition of $B$ means: (1) $B_i \neq \varnothing$ for all $i \in I$, (2) $B_i \cap B_j = \varnothing$ for all $i \neq j$, and (3) $\bigcup_{i \in I} B_i = B$. We verify these three conditions for $\{f^{-1}(B_i)\}_{i \in I}$ in $A$:
@@ -246,14 +241,14 @@
       x \in \bigcup_{i \in I} f^{-1}(B_i) \iff \exists i \in I, \, x \in f^{-1}(B_i) \iff \exists i \in I, \, f(x) \in B_i \iff f(x) \in \bigcup_{i \in I} B_i \iff f(x) \in B \iff x \in A
       $$
       Thus, $\{f^{-1}(B_i)\}_{i \in I}$ is a partition of $A$.
-
+  
   - **Solution 5.2**
     **Part (b):**
-    By definition, $\{A_i\}_{i \in I}$ being a partition of $A$ means: (1) $A_i \neq \varnothing$ for all $i \in I$, (2) $A_i \cap A_j = \varnothing$ for all $i \neq j$, and (3) $\bigcup_{i \in I} A_i = A$. We verify these three conditions for $\{f(A_i)\}_{i \in I}$ in $B$:
+    By definition, $\{A_i\}_{i \in I}$ being a partition of $A$ means: (1) $A_i \neq \varnothing$ for all $i \in I$, (2) $A_i \cap A_j = \varnothing$ for all $i \neq j$, and (3) $\bigcup_{i \in I} A_i = A$. We verify these three conditions for $\{f(A_i)\}_{i \in I}$ in $f(A)$:
     * **Non-emptiness:** Let $i \in I$. Since $\{A_i\}_{i \in I}$ is a partition, there exists some $x \in A_i$. By definition of image, $f(x) \in f(A_i)$. Thus, $f(A_i) \neq \varnothing$.
     * **Disjointness:** Let $i, j \in I$ with $i \neq j$. Suppose there exists $y \in f(A_i) \cap f(A_j)$. By definition of image, there exist $x_1 \in A_i$ and $x_2 \in A_j$ such that $f(x_1) = y$ and $f(x_2) = y$, meaning $f(x_1) = f(x_2)$. Since $f$ is injective, $f(x_1) = f(x_2) \implies x_1 = x_2$. This implies $x_1 \in A_i \cap A_j$. However, $A_i \cap A_j = \varnothing$, which is a contradiction. Thus, $f(A_i) \cap f(A_j) = \varnothing$.
-    * **Union:** Note that the statement as written in the question contains a minor standard textbook assumption or typo: if $\bigcup_{i \in I} f(A_i) = f(A) = B$, it implicitly requires $f$ to be surjective as well to partition the entire codomain $B$. Let us verify the union identity under the condition that it partitions $f(A)$:
+    * **Union:** We show $\bigcup_{i \in I} f(A_i) = f(A)$ by showing $y \in \bigcup_{i \in I} f(A_i) \iff y \in f(A)$:
       $$
       y \in \bigcup_{i \in I} f(A_i) \iff \exists i \in I, \, y \in f(A_i) \iff \exists i \in I, \, \exists x \in A_i, \, f(x) = y \iff \exists x \in \bigcup_{i \in I} A_i, \, f(x) = y \iff \exists x \in A, \, f(x) = y \iff y \in f(A)
       $$
-      If $f$ is a bijection (both injective and surjective), then $f(A) = B$, and thus $\{f(A_i)\}_{i \in I}$ is a partition of $B$.
+      Thus, $\{f(A_i)\}_{i \in I}$ is a partition of $f(A)$.

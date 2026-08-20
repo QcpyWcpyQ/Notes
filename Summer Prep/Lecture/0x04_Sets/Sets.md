@@ -105,67 +105,81 @@
 - **Definition 8**  
   Let $A$ be a set, the **complement** of $A$, denoted $A^\complement$, is the set $A^\complement=\left\{x:x\not\in A\right\}$.  
 
-- **Proposition 8.1**  
-  Let $X$ be a set.  
-  1. If $A,B \subseteq X$ then $A,B\subseteq A\cup B$ and $A\cap B\subseteq A,B$.  
-  2. If $A,B\subseteq X$ then $A\cup B=B\cup A$ and $A\cap B=B\cap A$.  
-  3. If $A,B\subseteq X$ and $A\subseteq B$ then $B^\complement\subseteq A^\complement$.  
-  4. $X^\complement=\varnothing$ and $\varnothing^\complement=X$.  
-  5. If $A,B\subseteq X$ then $\left(A\cup B\right)^\complement=A^\complement\cap B^\complement$.  
-  6. If $A,B\subseteq X$ then $\left(A\cap B\right)^\complement=A^\complement\cup B^\complement$.  
-
-  $5, 6$ are De Morgan's laws.  
-
-  **Proof**  
-  1. Let $x\in A$, then $x\in A$ or $x\in B$, that is,  
-     $$
-     x\in A\cup B\implies A\subseteq A\cup B.
-     $$
-     Analogously, we have that $B\subseteq A\cup B$.  
-     Let $x\in A\cap B$, then $x\in A$ and $x\in B$, that is,  
-     $$
-     x\in A\cap B\implies A\cap B\subseteq A,B.
-     $$
-  2. $$
-     \begin{aligned}  
-     A\cup B&=\left\{x:x\in A\text{ or }x\in B\right\} \\  
-     &=\left\{x:x\in B\text{ or }x\in A\right\}=B\cup A  
-     \end{aligned}.
-     $$
-     Analogously, we have that $A\cap B=B\cap A$.  
-  3. Suppose that $A\subseteq B$ and let $x\in B^\complement$, then $x\not\in B$; since $A\subseteq B$ we have that $x\not\in A$ and thus $x\in A^\complement$.  
-     Therefore, $B^\complement\subseteq A^\complement$.  
-  4. By definition:  
-     $$
-     \begin{aligned}
-     &X^\complement=\left\{x\in X:x\not\in X\right\}=\varnothing \\  
-     &\varnothing^\complement=\left\{x\in X:x\not\in\varnothing\right\}=X.
-     \end{aligned}
-     $$
-  5. Let $x\in\left(A\cup B\right)^\complement$, then  
-     $$
-     \begin{aligned}  
-     x\in\left(A\cup B\right)^\complement&\iff x\not\in\left(A\cup B\right) \\  
-     &\iff \text{It is false that }x\in A\lor x\in B\\  
-     &\iff \text{It is true that }x\not\in A \land x\not\in B \\  
-     &\iff x\not\in A \text{ and }x\not\in B \\  
-     &\iff x\in A^\complement\text{ and }x\in B^\complement \\  
-     &\iff x\in A^\complement\cap B^\complement  .
-     \end{aligned}
-     $$
-     Thus $\left(A\cup B\right)^\complement=A^\complement\cap B^\complement$.  
-  6. Let $x\in\left(A\cap B\right)^\complement$, then  
-     $$
-     \begin{aligned}  
-     x\in\left(A\cap B\right)^\complement&\iff x\not\in\left(A\cap B\right) \\  
-     &\iff \text{It is false that }x\in A\land x\in B\\  
-     &\iff \text{It is true that }x\not\in A \lor x\not\in B \\  
-     &\iff x\not\in A \text{ or }x\not\in B \\  
-     &\iff x\in A^\complement\text{ or }x\in B^\complement \\  
-     &\iff x\in A^\complement\cup B^\complement  .
-     \end{aligned}
-     $$
-     Thus $\left(A\cap B\right)^\complement=A^\complement\cup B^\complement$.  
+  - **Proposition 8.1**  
+    Let $X$ be a set.  
+  
+    1. If $A,B \subseteq X$ then $A,B\subseteq A\cup B$ and $A\cap B\subseteq A,B$.  
+  
+    2. If $A,B\subseteq X$ then $A\cup B=B\cup A$ and $A\cap B=B\cap A$.  
+  
+    3. If $A,B\subseteq X$ and $A\subseteq B$ then $B^\complement\subseteq A^\complement$.  
+  
+    4. $X^\complement=\varnothing$ and $\varnothing^\complement=X$.  
+  
+    5. If $A,B\subseteq X$ then $\left(A\cup B\right)^\complement=A^\complement\cap B^\complement$.  
+  
+    6. If $A,B\subseteq X$ then $\left(A\cap B\right)^\complement=A^\complement\cup B^\complement$.  
+  
+    $5, 6$ are De Morgan's laws.  
+  
+    **Proof**  
+    - Let $x\in A$, then $x\in A$ or $x\in B$, that is,  
+       $$
+       x\in A\cup B\implies A\subseteq A\cup B.
+       $$
+       Analogously, we have that $B\subseteq A\cup B$.  
+       Let $x\in A\cap B$, then $x\in A$ and $x\in B$, that is,  
+       $$
+       x\in A\cap B\implies A\cap B\subseteq A,B.
+       $$
+    - $$
+       \begin{aligned}  
+       A\cup B&=\left\{x:x\in A\text{ or }x\in B\right\} \\  
+       &=\left\{x:x\in B\text{ or }x\in A\right\}=B\cup A  
+       \end{aligned}.
+       $$
+  
+    Analogously, we have that $A\cap B=B\cap A$.  
+  
+    - Suppose that $A\subseteq B$ and let $x\in B^\complement$, then $x\not\in B$; since $A\subseteq B$ we have that $x\not\in A$ and thus $x\in A^\complement$.  
+       Therefore, $B^\complement\subseteq A^\complement$.  
+    - By definition:  
+  
+    $$
+    \begin{aligned}
+    &X^\complement=\left\{x\in X:x\not\in X\right\}=\varnothing \\  
+    &\varnothing^\complement=\left\{x\in X:x\not\in\varnothing\right\}=X.
+    \end{aligned}
+    $$
+  
+    - Let $x\in\left(A\cup B\right)^\complement$, then  
+  
+    $$
+    \begin{aligned}  
+    x\in\left(A\cup B\right)^\complement&\iff x\not\in\left(A\cup B\right) \\  
+    &\iff \text{It is false that }x\in A\lor x\in B\\  
+    &\iff \text{It is true that }x\not\in A \land x\not\in B \\  
+    &\iff x\not\in A \text{ and }x\not\in B \\  
+    &\iff x\in A^\complement\text{ and }x\in B^\complement \\  
+    &\iff x\in A^\complement\cap B^\complement  .
+    \end{aligned}
+    $$
+    Thus $\left(A\cup B\right)^\complement=A^\complement\cap B^\complement$.  
+  
+    - Let $x\in\left(A\cap B\right)^\complement$, then  
+  
+    $$
+    \begin{aligned}  
+    x\in\left(A\cap B\right)^\complement&\iff x\not\in\left(A\cap B\right) \\  
+    &\iff \text{It is false that }x\in A\land x\in B\\  
+    &\iff \text{It is true that }x\not\in A \lor x\not\in B \\  
+    &\iff x\not\in A \text{ or }x\not\in B \\  
+    &\iff x\in A^\complement\text{ or }x\in B^\complement \\  
+    &\iff x\in A^\complement\cup B^\complement  .
+    \end{aligned}
+    $$
+    Thus $\left(A\cap B\right)^\complement=A^\complement\cup B^\complement$.  
+  
 
 ---
 
