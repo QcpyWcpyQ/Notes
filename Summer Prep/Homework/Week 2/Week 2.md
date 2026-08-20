@@ -78,7 +78,7 @@
   - **Solution 2.3**
     **Part (c):**
     **Proof:**
-    By definition of evaluation, any polynomial $f \in \mathbb{R}[x]$ can be written uniquely as $f(x) = x \cdot q_1(x) + f(0)$ for some polynomial $q_1 \in \mathbb{R}[x]$. Similarly, $g(x) = x \cdot q_2(x) + g(0)$.  
+    By definitidon of evaluation, any polynomial $f \in \mathbb{R}[x]$ can be written uniquely as $f(x) = x \cdot q_1(x) + f(0)$ for some polynomial $q_1 \in \mathbb{R}[x]$. Similarly, $g(x) = x \cdot q_2(x) + g(0)$.  
     Subtracting $g$ from $f$ yields:
     $$
     f(x) - g(x) = x(q_1(x) - q_2(x)) + (f(0) - g(0))
@@ -238,10 +238,18 @@
     * **Disjointness:** Let $i, j \in I$ with $i \neq j$. Suppose there exists $x \in f^{-1}(B_i) \cap f^{-1}(B_j)$. By definition of preimage, $f(x) \in B_i$ and $f(x) \in B_j$, meaning $f(x) \in B_i \cap B_j$. However, $B_i \cap B_j = \varnothing$, which is a contradiction. Thus, $f^{-1}(B_i) \cap f^{-1}(B_j) = \varnothing$.
     * **Union:** We show $\bigcup_{i \in I} f^{-1}(B_i) = A$ by showing $x \in \bigcup_{i \in I} f^{-1}(B_i) \iff x \in A$:
       $$
-      x \in \bigcup_{i \in I} f^{-1}(B_i) \iff \exists i \in I, \, x \in f^{-1}(B_i) \iff \exists i \in I, \, f(x) \in B_i \iff f(x) \in \bigcup_{i \in I} B_i \iff f(x) \in B \iff x \in A
+      \begin{aligned}
+      
+      x \in \bigcup_{i \in I} f^{-1}(B_i) &\iff \exists i \in I, \, x \in f^{-1}(B_i) \\
+      &\iff \exists i \in I, \, f(x) \in B_i \\
+      &\iff f(x) \in \bigcup_{i \in I} B_i \\
+      &\iff f(x) \in B \\
+      &\iff x \in A
+      
+      \end{aligned}
       $$
       Thus, $\{f^{-1}(B_i)\}_{i \in I}$ is a partition of $A$.
-  
+    
   - **Solution 5.2**
     **Part (b):**
     By definition, $\{A_i\}_{i \in I}$ being a partition of $A$ means: (1) $A_i \neq \varnothing$ for all $i \in I$, (2) $A_i \cap A_j = \varnothing$ for all $i \neq j$, and (3) $\bigcup_{i \in I} A_i = A$. We verify these three conditions for $\{f(A_i)\}_{i \in I}$ in $f(A)$:
@@ -249,6 +257,14 @@
     * **Disjointness:** Let $i, j \in I$ with $i \neq j$. Suppose there exists $y \in f(A_i) \cap f(A_j)$. By definition of image, there exist $x_1 \in A_i$ and $x_2 \in A_j$ such that $f(x_1) = y$ and $f(x_2) = y$, meaning $f(x_1) = f(x_2)$. Since $f$ is injective, $f(x_1) = f(x_2) \implies x_1 = x_2$. This implies $x_1 \in A_i \cap A_j$. However, $A_i \cap A_j = \varnothing$, which is a contradiction. Thus, $f(A_i) \cap f(A_j) = \varnothing$.
     * **Union:** We show $\bigcup_{i \in I} f(A_i) = f(A)$ by showing $y \in \bigcup_{i \in I} f(A_i) \iff y \in f(A)$:
       $$
-      y \in \bigcup_{i \in I} f(A_i) \iff \exists i \in I, \, y \in f(A_i) \iff \exists i \in I, \, \exists x \in A_i, \, f(x) = y \iff \exists x \in \bigcup_{i \in I} A_i, \, f(x) = y \iff \exists x \in A, \, f(x) = y \iff y \in f(A)
+      \begin{aligned}
+      
+      y \in \bigcup_{i \in I} f(A_i) &\iff \exists i \in I, \, y \in f(A_i) \\
+      &\iff \exists i \in I, \, \exists x \in A_i, \, f(x) = y \\
+      &\iff \exists x \in \bigcup_{i \in I} A_i, \, f(x) = y \\
+      &\iff \exists x \in A, \, f(x) = y \\
+      &\iff y \in f(A)
+      
+      \end{aligned}
       $$
       Thus, $\{f(A_i)\}_{i \in I}$ is a partition of $f(A)$.
