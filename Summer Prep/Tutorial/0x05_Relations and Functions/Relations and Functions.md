@@ -673,3 +673,148 @@
     $$
     Thus, $f(x_1) = f(x_2) \implies x_1 = x_2$ for any arbitrary elements, proving that $f$ is injective.
     The proof is complete.
+
+---
+
+- **Exercise 24**
+  Consider ther functions $f,g\colon\mathbb R\to\mathbb R$ defined by
+  $$
+  f(x)=\dfrac{x}{1+\vert x\vert},\quad g(x)=\begin{cases}
+  
+  \dfrac{x}{1+\vert x\vert}\quad &(\vert x\vert<1) \\
+  0 \quad &(\vert x\vert\geqslant 1)
+  \end{cases}
+  $$
+
+  1. Is $g$ a left inverse of $f$ ?
+     $$
+     \begin{aligned}
+     
+     (g\circ f)(x)&=g(f(x)) =g\left(\dfrac{x}{1+\vert x\vert}\right) \\
+     &=\dfrac{\dfrac{x}{1+\vert x\vert}}{1-\left\vert\dfrac{x}{1+\vert x\vert}\right\vert} \\
+     &=\dfrac{\dfrac{x}{1+\vert x\vert}}{1-\dfrac{\vert x\vert}{1+\vert x\vert}} \\
+     &=x
+     
+     \end{aligned}
+     $$
+     Thus the statement is true.
+  
+  2. Is $g$ a right inverse of $f$ ?
+     $$
+     (f\circ g)(1)=f(g(1))=f(0)=0
+     $$
+  
+     Thus the statement is false
+  
+  3. Is $f$ invertible? 
+  
+     - **Problem 28**
+       The function $f \colon \mathbb{R} \rightarrow \mathbb{R}$ is **not invertible** because it is not surjective onto its given codomain $\mathbb{R}$.
+       
+       - **Analysis based on definitions:**
+         By definition, a function is invertible if and only if it is a bijection.
+         Let $x_1, x_2 \in \mathbb{R}$ such that $f(x_1) = f(x_2)$.
+       
+         * If $x_1, x_2 \ge 0$, then $\frac{x_1}{1 + x_1} = \frac{x_2}{1 + x_2} \implies x_1(1 + x_2) = x_2(1 + x_1) \implies x_1 = x_2$.
+         * If $x_1, x_2 < 0$, then $\frac{x_1}{1 - x_1} = \frac{x_2}{1 - x_2} \implies x_1(1 - x_2) = x_2(1 - x_1) \implies x_1 = x_2$.
+         * Since $f(x) \ge 0$ for $x \ge 0$ and $f(x) < 0$ for $x < 0$, inputs of different signs cannot have the same output. Thus, $f(x_1) = f(x_2) \implies x_1 = x_2$, showing that $f$ is injective.
+         
+         Let $y \in \mathbb{R}$ be an arbitrary element in the codomain. By observing the structure of the function, since $1 + |x| > |x|$ holds true for all $x \in \mathbb{R}$, we always have:
+         $$
+         |f(x)| = \left| \frac{x}{1 + |x|} \right| = \frac{|x|}{1 + |x|} < 1
+         $$
+         This means the image of $f$ is bounded, specifically $\text{Im } f = (-1, 1)$. Because the image does not equal the given codomain ($\text{Im} f \neq \mathbb{R}$), there exist elements in the codomainfor which no preimage $x \in \mathbb{R}$ can be found. Thus, $f$ is not surjective.
+
+---
+
+- **Problem 25**
+  Determine the maximal possible domain $D$ of $f(x) = \frac{x + 1}{x + 2}$ and the image $I = \text{Im } f$. Is $f \colon D \rightarrow I$ bijective, invertible? If so, find the inverse.
+  
+  - **Solution 25.1**
+    * **Maximal Domain:** The rational function is well-defined as long as the denominator is non-zero, $x + 2 \neq 0 \iff x \neq -2$. Thus, the maximal possible domain is:
+      $$
+      D = \mathbb{R} \setminus \{-2\}
+      $$
+    * **Image:** By definition, $\text{Im } f = \{y \in \mathbb{R} \mid \exists x \in D, \, f(x) = y\}$. Let $y = \frac{x + 1}{x + 2}$. Rearranging the equation to solve for $x$:
+      $$
+      y(x + 2) = x + 1 \implies yx + 2y = x + 1 \implies x(y - 1) = 1 - 2y \implies x = \frac{1 - 2y}{y - 1}
+      $$
+      The expression for $x$ is well-defined for all $y \neq 1$. Furthermore, the value of $x$ can never equal $-2$ because $\frac{1 - 2y}{y - 1} = -2 \implies 1 - 2y = -2y + 2 \implies 1 = 2$, which is impossible. Thus, the image is:
+      $$
+      I = \mathbb{R} \setminus \{1\}
+      $$
+    * **Bijectivity and Inversibility:** 
+      * **Injective:** Let $x_1, x_2 \in D$ such that $f(x_1) = f(x_2)$. Then $\frac{x_1 + 1}{x_1 + 2} = \frac{x_2 + 1}{x_2 + 2} \implies (x_1 + 1)(x_2 + 2) = (x_2 + 1)(x_1 + 2) \implies x_1 x_2 + 2x_1 + x_2 + 2 = x_1 x_2 + 2x_2 + x_1 + 2 \implies x_1 = x_2$.
+      * **Surjective:** By restricting the codomain to the image $I$, every $y \in I$ has a preimage $x = \frac{1 - 2y}{y - 1} \in D$ such that $f(x) = y$.
+      Since $f \colon D \rightarrow I$ is both injective and surjective, it is bijective and therefore invertible.
+    * **Inverse Function:** The inverse function $f^{-1} \colon I \rightarrow D$ is given by:
+      $$
+      f^{-1}(y) = \frac{1 - 2y}{y - 1}
+      $$
+
+---
+
+- **Problem 26**
+  Let $f \colon \mathbb{R} \rightarrow \mathbb{R}$ be a function defined by $f(x) = \frac{x^2}{x^2 + 1}$.
+  
+  1. Find $f^{-1}\left(\frac{1}{2}\right)$.
+  2. Find $f^{-1}\left(\left[\frac{1}{4}, \frac{3}{4}\right]\right)$.
+  3. Let $A = [0, 3] \subset \mathbb{R}$, find $f(A)$, $f^{-1}(f(A))$.
+
+  - **Solution 26.1**
+    * **1.** By definition of a singleton preimage, we solve $f(x) = \frac{1}{2}$:
+      $$
+      \frac{x^2}{x^2 + 1} = \frac{1}{2} \implies 2x^2 = x^2 + 1 \implies x^2 = 1 \implies x = \pm 1
+      $$
+      Thus:
+      $$
+      f^{-1}\left(\frac{1}{2}\right) = \{-1, 1\}
+      $$
+    * **2.** By definition, $f^{-1}\left(\left[\frac{1}{4}, \frac{3}{4}\right]\right) = \left\{x \in \mathbb{R} \mid \frac{1}{4} \le \frac{x^2}{x^2 + 1} \le \frac{3}{4}\right\}$. Since $x^2 + 1 > 0$, we solve the inequalities separately:
+      * Left side: $\frac{1}{4}(x^2 + 1) \le x^2 \implies x^2 + 1 \le 4x^2 \implies 3x^2 \ge 1 \implies x^2 \ge \frac{1}{3} \implies x \in \left(-\infty, -\frac{1}{\sqrt{3}}\right] \cup \left[\frac{1}{\sqrt{3}, \infty}\right)$.
+      * Right side: $x^2 \le \frac{3}{4}(x^2 + 1) \implies 4x^2 \le 3x^2 + 3 \implies x^2 \le 3 \implies x \in \left[-\sqrt{3}, \sqrt{3}\right]$.
+      Intersecting the two solution intervals yields:
+      
+      $$
+      f^{-1}\left(\left[\frac{1}{4}, \frac{3}{4}\right]\right) = \left[-\sqrt{3}, -\frac{1}{\sqrt{3}}\right] \cup \left[\frac{1}{\sqrt{3}}, \sqrt{3}\right]
+      $$
+    * **3.** Note that the question text has a standard typo writing $A \subset \mathbb{R}^3$, but the interval $[0, 3]$ indicates $A \subset \mathbb{R}$.
+      * To find $f(A)$, since $f(x) = \frac{x^2}{x^2 + 1} = 1 - \frac{1}{x^2 + 1}$, the function is strictly increasing on $[0, 3]$. Evaluating at the endpoints gives $f(0) = 0$ and $f(3) = \frac{9}{10}$. Thus:
+        $$
+        f(A) = \left[0, \frac{9}{10}\right]
+        $$
+      * To find $f^{-1}(f(A))$, we solve $x \in \mathbb{R}$ such that $0 \le \frac{x^2}{x^2 + 1} \le \frac{9}{10}$. The left inequality is true for all $x \in \mathbb{R}$. The right inequality gives $10x^2 \le 9x^2 + 9 \implies x^2 \le 9 \implies -3 \le x \le 3$. Thus:
+        $$
+        f^{-1}(f(A)) = [-3, 3]
+        $$
+
+---
+
+- **Problem 27**
+  Let $f \colon X \rightarrow Y$ be a function. Prove that $f$ is injective $\iff \forall A \subseteq X, \, f^{-1}(f(A)) \subseteq A$.
+  
+  - **Solution 27.1**
+    **Proof:**
+    $(\Longrightarrow)$ Assume $f$ is injective. Let $A \subseteq X$ be an arbitrary subset, and let $x \in f^{-1}(f(A))$.
+    By definition of preimage, $x \in f^{-1}(f(A)) \implies f(x) \in f(A)$.
+    By definition of image, $f(x) \in f(A) \implies \exists x' \in A$ such that $f(x) = f(x')$.
+    Since $x, x' \in X$ and $f$ is given to be injective, $f(x) = f(x') \implies x = x'$.
+    Since $x' \in A$, it follows directly that $x \in A$.
+    Thus, $f^{-1}(f(A)) \subseteq A$.
+  
+    $(\Longleftarrow)$ Assume that for every subset $A \subseteq X$, $f^{-1}(f(A)) \subseteq A$ holds true. We need to show that $f$ is injective.
+    Let $x_1, x_2 \in X$ be arbitrary elements in the domain such that:
+    $$
+    f(x_1) = f(x_2)
+    $$
+    Since our hypothesis holds true for *any* subset of $X$, let us choose $A = \{x_1\}$ to be the singleton subset containing only $x_1$.
+    Evaluate the image of $A$: $f(A) = \{f(x_1)\}$.
+    Since we assumed $f(x_1) = f(x_2)$, it follows that $f(x_2) \in \{f(x_1)\} = f(A)$.
+    By definition of preimage, $f(x_2) \in f(A) \implies x_2 \in f^{-1}(f(A))$.
+    By our hypothesis, $f^{-1}(f(A)) \subseteq A$, which means $x_2 \in A$.
+    Since $A = \{x_1\}$, the statement $x_2 \in \{x_1\}$ implies:
+    $$
+    x_2 = x_1
+    $$
+    Thus, $f(x_1) = f(x_2) \implies x_1 = x_2$, proving that $f$ is injective.
+    The proof is complete.

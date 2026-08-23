@@ -253,6 +253,7 @@
   - **Solution 5.2**
     **Part (b):**
     By definition, $\{A_i\}_{i \in I}$ being a partition of $A$ means: (1) $A_i \neq \varnothing$ for all $i \in I$, (2) $A_i \cap A_j = \varnothing$ for all $i \neq j$, and (3) $\bigcup_{i \in I} A_i = A$. We verify these three conditions for $\{f(A_i)\}_{i \in I}$ in $f(A)$:
+    
     * **Non-emptiness:** Let $i \in I$. Since $\{A_i\}_{i \in I}$ is a partition, there exists some $x \in A_i$. By definition of image, $f(x) \in f(A_i)$. Thus, $f(A_i) \neq \varnothing$.
     * **Disjointness:** Let $i, j \in I$ with $i \neq j$. Suppose there exists $y \in f(A_i) \cap f(A_j)$. By definition of image, there exist $x_1 \in A_i$ and $x_2 \in A_j$ such that $f(x_1) = y$ and $f(x_2) = y$, meaning $f(x_1) = f(x_2)$. Since $f$ is injective, $f(x_1) = f(x_2) \implies x_1 = x_2$. This implies $x_1 \in A_i \cap A_j$. However, $A_i \cap A_j = \varnothing$, which is a contradiction. Thus, $f(A_i) \cap f(A_j) = \varnothing$.
     * **Union:** We show $\bigcup_{i \in I} f(A_i) = f(A)$ by showing $y \in \bigcup_{i \in I} f(A_i) \iff y \in f(A)$:
