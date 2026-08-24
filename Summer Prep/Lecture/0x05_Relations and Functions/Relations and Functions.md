@@ -43,6 +43,7 @@
 
 - **Definition 3**   
   Let $X$ be a set. An **equivalence relation** on $X$ is a relation $\sim$ that satisfies the following properties.    
+  
   1. $\sim$ is reflexive.   
   2. $\sim$ is symmetric.   
   3. $\sim$ is transitive.    
@@ -234,16 +235,16 @@
   If there exists a bijective function $f\colon X\to Y$. We say that $X$ and $Y$ are **one-to-one correspondence**.
 
   - **Example 9.1**
-    The identity function $\text{id}_x\colon X\to X$ is injective since if $\text{id}_x(x)=\text{id}_x(y)$ then $x=y$.
-    It is also surjective since for all $x\in X$ we have that $x=\text{id}_x(x)$.
-    Therefore, $\text{id}_x$ is bijective.
+    The identity function $\text{id}_X\colon X\to X$ is injective since if $\text{id}_X(x)=\text{id}_X(y)$ then $x=y$.
+    It is also surjective since for all $x\in X$ we have that $x=\text{id}_X(x)$.
+    Therefore, $\text{id}_X$ is bijective.
     
   - **Example 9.2**
     Consider the constant function $\text{K}_c\colon X\to Y$.
     Note that if $X$ has more than one element the function is not injective and if $Y$ has more than one element the function is not surjective.
     
   - **Example 9.3**
-    The inclusion function $\iota\colon A\to X$ is injective since $\iota_A(x)=\iota_A(y)$ implies $x=y$. Note that, if $A=X$ then $\iota_x=\text{id}_x$. Therefore $\iota_A$ is surjective. If $A\neq X$ and is not surjective if $A\subset X$.
+    The inclusion function $\iota\colon A\to X$ is injective since $\iota_A(x)=\iota_A(y)$ implies $x=y$. Note that, if $A=X$ then $\iota_x=\text{id}_X$. Therefore $\iota_A$ is surjective. If $A\neq X$ and is not surjective if $A\subset X$.
     
   - **Example 9.4**
     Suppose that $f \colon A \rightarrow B$ and $g \colon B \rightarrow C$ are functions. Prove that if $g \circ f$ is injective then $f$ is injective, and if $g \circ f$ is surjective then $g$ is surjective.
@@ -362,14 +363,14 @@
 ---
 
 - **Definition 11**
-  A funtion $f\colon X\to Y$ is called **invertible** if there exists a function $g\colon Y\to X$ such that $g\circ f=\text{id}_x$ and $f\circ g=\text{id}_y$. Such that function is called **inverse** of $f$.
+  A funtion $f\colon X\to Y$ is called **invertible** if there exists a function $g\colon Y\to X$ such that $g\circ f=\text{id}_X$ and $f\circ g=\text{id}_Y$. Such that function is called **inverse** of $f$.
 
 - **Remark 11**
   If $f\colon X\to Y$ is invertible then its inverse is unique. In fact, suppose that $g,g^\prime\colon Y\to X$ are both inverse of $f$, then
   $$
-  g\circ f=\text{id}_x=g^\prime\circ f\text{ and } f\circ g=\text{id}_y=f\circ g^\prime
+  g\circ f=\text{id}_X=g^\prime\circ f\text{ and } f\circ g=\text{id}_Y=f\circ g^\prime
   $$
-  hence $g=\text{id}_x\circ g=\left(g^\prime\circ f\right)\circ g=g^\prime\left(\circ f\circ g\right)=g^\prime \circ \text{id}_y=g^\prime$.
+  hence $g=\text{id}_X\circ g=\left(g^\prime\circ f\right)\circ g=g^\prime\left(\circ f\circ g\right)=g^\prime \circ \text{id}_Y=g^\prime$.
 
   If $f$ is invertivle, the inverse of $f$ is denoted $f^{-1}$. Note that for all $x\in X$ and $y\in Y$
   $$
@@ -402,21 +403,28 @@
     A function $f\colon X\to Y$ is invertible, if and only if, $f$ is bijective.
 
     - **Proof 11.2.1**
-      ($\Longrightarrow$) Suppose that $f$ is invertivle then there exists $f^{-1}\colon Y\to X$ such that $f^{-1}\circ f=\text{id}_x$ and $f\circ f^{-1}=\text{id}_y$.
+      ($\Longrightarrow$) Suppose that $f$ is invertivle then there exists $f^{-1}\colon Y\to X$ such that $f^{-1}\circ f=\text{id}_X$ and $f\circ f^{-1}=\text{id}_Y$.
       If $f(x)=f\left(x^\prime\right)$ then
       $$
       \begin{aligned}
       
       f^{-1}(f(x))&=f^{-1}\left(f\left(x^\prime\right)\right) \\
       (f^{-1}\circ f)(x)&=(f^{-1}\circ f)\left(x^\prime\right) \\
-      \text{id}_x(x)&=\text{id}_{x}\left(x^\prime\right) \\
+      \text{id}_X(x)&=\text{id}_{X}\left(x^\prime\right) \\
       x&=x^\prime
       \end{aligned}
       $$
       hence $f$ is injective.
-      Let $y\in Y$ then $y=\text{id}_y(y)=\left(f\circ f^{-1}\right)(y)=f\left(f^{-1}(y)\right)$ with $f^{-1}(y)\in X$, hence $f$ is surjective. Therefore, $f$ is bijective.
+      Let $y\in Y$ then $y=\text{id}_Y(y)=\left(f\circ f^{-1}\right)(y)=f\left(f^{-1}(y)\right)$ with $f^{-1}(y)\in X$, hence $f$ is surjective. Therefore, $f$ is bijective.
 
-      ($\Longleftarrow$) TBD
+      ($\Longleftarrow$) Suppose that $f$ is bijective. Let $y\in Y$ then $y\in\text{Ran}(f)$ because $f$ is surjective and since $f$ is injective then by the previous theorem there exists a unique $x\in X$ such that $y=f(x)$.
+      Define $g\colon Y\to X$ by $g(y)=x$ where $x$ is the unique element in $X$ such that $y=f(x)$ then
+      $$
+      g\circ f=g(f(x))=x=\text{id}_X(x) \\
+      f\circ g=f(g(x))=y=\text{id}_Y(y)
+      $$
+      
+      therefore $g\circ f=\text{id}_X,f\circ g=\text{id}_Y$ and thus $f$ is invertible.
 
 ---
 
