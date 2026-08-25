@@ -185,6 +185,8 @@
     2. If $m,n,r\in\mathbb Z$ with $m\leqslant n$ then $m+r\leqslant n+r$.
     3. If $m,n,r\in\mathbb Z$ with $m\leqslant n\land r\geqslant 0$ then $mr\leqslant nr$.
 
+---
+
 - **Definition 3**
   The **absolute value** of an integer $m$ is
   $$
@@ -229,3 +231,43 @@
 
       3. ($\Longrightarrow$) If $m^2=0$ then $m\cdot m=m^2=0$ and thus $m=0$.
          ($\Longleftarrow$) If $m=0$ then $m^2=m\cdot m=0\cdot 0=0$.
+
+---
+
+- **Definition 4**
+  A integer $n$ is **even** if $n=2k$ for some $k\in\mathbb Z$.
+  A integer $n$ is **odd** if $n=2k+1$ for some $k\in\mathbb Z$.
+
+  - **Example 4.1**
+    $-10$ is even since $-10=2\cdot (-5)$.
+    $7$ is even since $7=2\cdot 3+1$.
+
+  - **Example 4.2**
+    Prove that the sum and product of two even integers is even.
+
+    - **Proof 4.2.1**
+      Suppose that $n,n^\prime$ are even. Then by the definition
+      $$
+      n=2k,n^\prime=2k^\prime \text{ for some }k,k^\prime \in\mathbb Z
+      $$
+      hence
+      $$
+      n+n^\prime=2k+2k^\prime=2\left(k+k^\prime\right)\text{ with }k+k^\prime\in\mathbb Z \\
+      n\cdot n^\prime = (2k)\cdot \left(2k^\prime\right) = 2 \cdot \left(2kk^\prime\right) \text{ with } 2kk^\prime\in\mathbb Z
+      $$
+      Thus that the sum and product of two even integers is even.
+    
+  - **Exercise 4.3**
+    Are the sum and product of two odd integers odd?
+  
+    - **Solution 4.3.1**
+      Suppose that $n,n^\prime$ are odd. Then by the definition
+      $$
+      n=2k+1,n^\prime=2k^\prime+1 \text{ for some }k,k^\prime \in\mathbb Z
+      $$
+      hence
+      $$
+      n+n^\prime=(2k+1)+\left(2k^\prime+1\right)=2\left(k+k^\prime+1\right)\text{ with }k+k^\prime+1\in\mathbb Z \\
+      n\cdot n^\prime = (2k+1)\cdot \left(2k^\prime+1\right) = 2 \cdot \left(2kk^\prime+k+k^\prime\right) +1 \text{ with } 2kk^\prime\in\mathbb Z
+      $$
+      Thus the product of two odd integers is odd but the sum of them is even.

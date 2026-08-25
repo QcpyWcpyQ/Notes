@@ -113,3 +113,80 @@
     
     \end{aligned}
     $$
+
+---
+
+- **Exercise 10**
+  Prove that $\forall n \in \mathbb Z, -|n| \leqslant n \leqslant |n|$.
+
+  - **Proof 10.1**
+    Let $n \in \mathbb Z$. We split the proof into two cases based on the definition of absolute value.
+
+    1. **Case 1**: Suppose that $n \geqslant 0$.
+       By definition, we have that $|n| = n$.
+       Since $n \geqslant 0$, by Proposition we have $-n \leqslant 0$, which implies
+       $$
+       -n \leqslant n.
+       $$
+       Substituting $n = |n|$, we get $-|n| \leqslant n \leqslant |n|$.
+
+    2. **Case 2**: Suppose that $n < 0$.
+       By definition, we have that $|n| = -n$, which implies $-|n| = n$.
+       Since $n < 0$ and $|n| > 0$, we have
+       $$
+       n < |n|.
+       $$
+       Substituting $n = -|n|$ into the left side, we get $-|n| = n \leqslant |n|$.
+
+    Therefore, in both cases, the inequality $-|n| \leqslant n \leqslant |n|$ holds for every $n \in \mathbb Z$.
+
+---
+
+- **Exercise 11**
+  Prove that $\forall n,a\in\mathbb Z,a\geqslant 0$, $\vert n\vert\leqslant a\iff -a\leqslant n\leqslant a$.
+
+  - **Proof 11.1**
+    Suppose $\forall n,a\in\mathbb Z,a\geqslant 0$.
+
+    ($\Longrightarrow$) Suppose $\vert n\vert\leqslant a$. Then $-a\leqslant -\vert n\vert \leqslant n\leqslant \vert n\vert \leqslant a$.
+
+    ($\Longleftarrow$) Suppose $n\geqslant 0\implies \vert n\vert =n\implies \vert n\vert \leqslant a$. 
+             Suppose $n<0\implies \vert n\vert =-n\implies \vert n\vert \leqslant a$.
+
+---
+
+- **Exercise 12 (Triangle Inequality)**
+  Prove that $\forall n, m \in \mathbb Z, |n + m| \leqslant |n| + |m|$.
+
+  - **Proof 12.1**
+    Let $n, m \in \mathbb Z$. By Exercise 10, we have the following inequalities for $n$ and $m$:
+    $$
+    -|n| \leqslant n \leqslant |n|,
+    $$
+    and
+    $$
+    -|m| \leqslant m \leqslant |m|.
+    $$
+    Adding these two inequalities together by Properties 2.1, we obtain
+    $$
+    -(|n| + |m|) \leqslant n + m \leqslant |n| + |m|.
+    $$
+    We now split the proof into two cases based on the sign of $n + m$.
+
+    1. **Case 1**: Suppose that $n + m \geqslant 0$.
+       By Definition 3, we have $|n + m| = n + m$.
+       From the right side of the combined inequality, we directly get
+       $$
+       |n + m| \leqslant |n| + |m|.
+       $$
+       
+    2. **Case 2**: Suppose that $n + m < 0$.
+       By Definition 3, we have $|n + m| = -(n + m)$.
+       From the left side of the combined inequality, we have $-(|n| + |m|) \leqslant n + m$.
+       By Proposition 3.1(1), multiplying by $-1$ reverses the inequality direction, which gives
+       $$
+       -(n + m) \leqslant |n| + |m|.
+       $$
+       Substituting $|n + m| = -(n + m)$, we get $|n + m| \leqslant |n| + |m|$.
+    
+    Therefore, in both cases, the inequality |n + m| \leqslant |n| + |m| holds for all $n, m \in \mathbb Z$.
