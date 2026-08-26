@@ -56,10 +56,11 @@
        $$
        regions. 
        Now consider the case with $n + 1$ lines. When we add the $(n+1)$-th line to the existing $n$ lines:
-       * Since the new line is not parallel to any of the existing $n$ lines, it must intersect all $n$ lines at $n$ distinct points.
-       * These $n$ intersection points divide the new $(n+1)$-th line into exactly $n+1$ line segments including rays at the ends.
-       * Each of these $n+1$ segments cuts through an existing region and splits it into two, then creating exactly $n+1$ new regions.
-
+       
+       * Since no two lines are parallel and no three lines pass through the same point, the new line must intersect all $n$ existing lines at exactly $n$ distinct, non-overlapping intersection points.
+       * These $n$ distinct intersection points divide the new $(n+1)$-th line into exactly $n+1$ line segments or rays at the ends.
+       * Each of these $n+1$ segments cuts through an existing region and splits it into two, thereby creating exactly $n+1$ new regions.
+       
        Hence, the total number of regions for $n+1$ lines is
        $$
        \begin{aligned}
