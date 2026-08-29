@@ -81,22 +81,21 @@
 
 ---
 
-- **Theorem 2 (Fundamental theorem of arithmetic)**
-  Every integer $n\geqslant 2$ can be written in a unique form up to rearrangements as a product
+- **Theorem 2 (Fundamental theorem of arithmetic)**Every integer $n\geqslant 2$ can be written in a unique form up to rearrangements as a product
   $$
   n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_r^{\alpha_r}
   $$
-  where $p_1,p_2,\cdots,p_r$ are distinct primes and $\alpha_1, \alpha_2, \cdots, \alpha_r\in\mathbb N$.
-
+  where $p_1,p_2,\cdots,p_r$ are distinct primes and $\alpha_1, \alpha_2, \cdots, \alpha_r\in\mathbb N$. For each $i$, the notation $\mho_{p_i}(n)=\alpha_i$ denotes the exponent of the prime $p_i$ in the factorization of $n$.
+  
   - **Proof 2.1**
-
+  
     1. Existence
        Consider the set
        $$
        A=\left\{m\in\mathbb N:m\geqslant 2\land m\text{ cannot be written as a product of primes}\right\}.
        $$
        If $A\neq \varnothing$, then by the well-ordering axiom $A$ has a first element $n$. Then $n$ is not a prime. As $n$ is composite, there exist $a,b\in\mathbb N$ such that $n=ab$ with $1<a<n$ and $1<b<n$. As $n$ is the first element of $A$, we have that $a$ and $b$ can be written as a product of primes, and therefore $n$ can be written as a product of primes, which is a contradiction because $n\in A$. Therefore $A=\varnothing$ and thus every integer $\geqslant 2$ can be written as a product of prime numbers.
-
+  
     2. Uniqueness
        Suppose that the result is false, that is, there exists an integer $\geqslant 2$ that can be written in two different forms as a product of primes. Then the set
        $$
@@ -111,20 +110,20 @@
        p_2p_3\cdots p_r=q_2q_3\cdots q_s < n.
        $$
        Therefore $p_2p_3\cdots p_r$ and $q_2q_3\cdots q_s$ are two different factorizations of a number $<n$, which contradicts the minimality of $n$. Therefore $B=\varnothing$, that is, every integer $\geqslant 2$ can be written in a unique form as a product of primes.
-
+  
   - **Example 2.2**
     Find the prime factorization of $224$ and $1260$.
     $$
     224 = 2^5\cdot 7\quad 1260 = 2^2\cdot 3^2\cdot 5\cdot 7.
     $$
-
+  
   - **Corollary 2.3**
     Every integer $n\leqslant -2$ can be written in a unique form up to rearrangements as a product
     $$
     n=(-1)p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_r^{\alpha_r}
     $$
     where $p_1,p_2,\cdots,p_r$ are distinct primes and \(\alpha_1, \alpha_2, \cdots, \alpha_r\in\mathbb N\).
-
+  
     - **Proof 2.3.1**
       Since $n\leqslant -2$ then $-n\geqslant 2$, and by the fundamental theorem of arithmetic
       $$
@@ -134,6 +133,23 @@
       Hence
       $$
       n=(-1)p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_r^{\alpha_r}.
+      $$
+    
+  - **Proposition 2.4**
+    Suppose $x,y\in\mathbb N$, then $\mho_{p}(xy)=\mho_{p}(x)+\mho_p(y)$ for any prime $p$.
+  
+    - **Proof 2.4.1** 
+      Consider the prime factorizations of $x$ and $y$. Let
+      $$
+        \begin{aligned}  x&=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_r^{\alpha_r}\quad \alpha_k\in\mathbb N_0, \\  y&=p_1^{\beta_1}p_2^{\beta_2}\cdots p_r^{\beta_r}\quad \beta_k\in\mathbb N_0.  \end{aligned}  
+      $$
+      Then we have
+      $$
+        xy=p_1^{\alpha_1+\beta_1}p_2^{\alpha_2+\beta_2}\cdots p_r^{\alpha_r+\beta_r}.  
+      $$
+      By the uniqueness of the prime factorization of $xy$, for each $p = p_k$, we have that
+      $$
+      \mho_p(xy)=\alpha_k+\beta_k=\mho_p(x)+\mho_p(y).
       $$
 
 ---
