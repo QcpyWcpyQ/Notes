@@ -104,3 +104,68 @@
        4 \mid \left(5^{n+1} + 3 \cdot 9^n - 4\right)
        $$
        is true for every $n \in \mathbb N_0$.
+
+---
+
+- **Problem 4**
+  Suppose $a, c \in \mathbb N$ with
+  $$
+  a < c \quad \text{and} \quad a \mid c.
+  $$
+  Suppose also that
+  $$
+  c - a \mid c + a.
+  $$
+  Determine all possible values of $c$ in terms of $a$. Justify your answer.  
+  Your proof should use only the definition and basic properties of divisibility.
+
+  - **Solution 4.1**
+    Suppose $a,c\in\mathbb N$ with $a<c,a\mid c,c-a\mid c+a$. The only possible values of $c$ in terms of $a$ are $c = 2a$ and $c = 3a$.
+    By the basic properties of divisibility, since $c - a \mid c + a$ and $c - a \mid c - a$, it must divide their difference:
+    $$
+    c - a \mid (c + a) - (c - a) \implies c - a \mid 2a.
+    $$
+    Since $a \mid c$ and $a < c$, by the definition of divisibility, there exists an integer $k \in \mathbb N$ with $k > 1$ such that
+    $$
+    c = ka.
+    $$
+    Substituting $c = ka$ into the relation $c - a \mid 2a$, we get
+    $$
+    ka - a \mid 2a \implies a(k - 1) \mid 2a.
+    $$
+    Since $a \in \mathbb N$, by the basic properties of divisibility
+    $$
+    k - 1 \mid 2.
+    $$
+    Since $k > 1$, the term $k - 1$ is a positive integer. The only positive divisors of $2$ are $1$ and $2$. This gives two possible cases: $k=2$ or $k=3$, that is, $c=2a$ or $c=3a$.
+
+---
+
+- **Problem 5**
+  Suppose $x,y\in\mathbb N$ with
+  $$
+  x^6 = 81 y^{10}.
+  $$
+  Prove that every prime that divides $y$ also divides $x$.
+
+  - **Proof 5.1**
+    
+    Suppose $x,y\in\mathbb N$ with $x^6 = 81 y^{10}$. Let $p$ be a prime number such that $p \mid y$. Since $y \in \mathbb N$, by definition, we have $\mho_p(y) \geqslant 1$.  
+    
+    By Proposition, we have
+    $$
+    \begin{aligned}
+    
+    \mho_p\left(x^6\right) &= \mho_p\left(81 y^{10}\right) \\
+    6\mho_p(x) &= \mho_p(81) + 10\mho_p(y).
+    
+    \end{aligned}
+    $$
+    Since $81 = 3^4$, we know that $\mho_p(81) \geqslant 0$ for any prime $p$. Together with $\mho_p(y) \geqslant 1$, we obtain that 
+    $$
+    6\mho_p(x) = \mho_p(81) + 10\mho_p(y) \geqslant 0 + 10(1) = 10.
+    $$
+    This implies $6\mho_p(x) \geqslant 10$, which means $\mho_p(x) \geqslant \dfrac{10}{6} > 0$.  
+    Since $\mho_p(x) \in \mathbb N_0$, it must be that $\mho_p(x) \geqslant 1$. By definition, this means $p \mid x$.  
+    
+    Therefore, every prime that divides $y$ also divides $x$.
