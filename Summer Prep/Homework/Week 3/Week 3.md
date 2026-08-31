@@ -149,7 +149,6 @@
   Prove that every prime that divides $y$ also divides $x$.
 
   - **Proof 5.1**
-    
     Suppose $x,y\in\mathbb N$ with $x^6 = 81 y^{10}$. Let $p$ be a prime number such that $p \mid y$. Since $y \in \mathbb N$, by definition, we have $\mho_p(y) \geqslant 1$.  
     
     By Proposition, we have
