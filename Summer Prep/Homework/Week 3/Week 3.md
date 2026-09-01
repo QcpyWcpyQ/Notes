@@ -149,22 +149,22 @@
   Prove that every prime that divides $y$ also divides $x$.
 
   - **Proof 5.1**
-    Suppose $x,y\in\mathbb N$ with $x^6 = 81 y^{10}$. Let $p$ be a prime number such that $p \mid y$. Since $y \in \mathbb N$, by definition, we have $\mho_p(y) \geqslant 1$.  
+    Suppose $x,y\in\mathbb N$ with $x^6 = 81 y^{10}$. Let $p$ be a prime number such that $p \mid y$. Since $y \in \mathbb N$, by definition, we have $\nu_p(y) \geqslant 1$.  
     
     By Proposition, we have
     $$
     \begin{aligned}
     
-    \mho_p\left(x^6\right) &= \mho_p\left(81 y^{10}\right) \\
-    6\mho_p(x) &= \mho_p(81) + 10\mho_p(y).
+    \nu_p\left(x^6\right) &= \nu_p\left(81 y^{10}\right) \\
+    6\nu_p(x) &= \nu_p(81) + 10\nu_p(y).
     
     \end{aligned}
     $$
-    Since $81 = 3^4$, we know that $\mho_p(81) \geqslant 0$ for any prime $p$. Together with $\mho_p(y) \geqslant 1$, we obtain that 
+    Since $81 = 3^4$, we know that $\nu_p(81) \geqslant 0$ for any prime $p$. Together with $\nu_p(y) \geqslant 1$, we obtain that 
     $$
-    6\mho_p(x) = \mho_p(81) + 10\mho_p(y) \geqslant 0 + 10(1) = 10.
+    6\nu_p(x) = \nu_p(81) + 10\nu_p(y) \geqslant 0 + 10(1) = 10.
     $$
-    This implies $6\mho_p(x) \geqslant 10$, which means $\mho_p(x) \geqslant \dfrac{10}{6} > 0$.  
-    Since $\mho_p(x) \in \mathbb N_0$, it must be that $\mho_p(x) \geqslant 1$. By definition, this means $p \mid x$.  
+    This implies $6\nu_p(x) \geqslant 10$, which means $\nu_p(x) \geqslant \dfrac{10}{6} > 0$.  
+    Since $\nu_p(x) \in \mathbb N_0$, it must be that $\nu_p(x) \geqslant 1$. By definition, this means $p \mid x$.  
     
     Therefore, every prime that divides $y$ also divides $x$.

@@ -65,9 +65,9 @@
 
     By Proposition 2.4, for any prime $p$, we have
     $$
-    \mho_{p}(xy)=\mho_{p}(x)+\mho_p(y).
+    \nu_{p}(xy)=\nu_{p}(x)+\nu_p(y).
     $$
-    Since $xy$ and $x$ are perfect squares, $\mho_{p}(xy)$ and $\mho_{p}(x)$ are even integers. Since the difference between two even integers is even, $\mho_p(y) = \mho_{p}(xy) - \mho_{p}(x)$ must be even. Thus, every exponent in the prime factorization of $y$ is even, which implies $y$ is a perfect square.
+    Since $xy$ and $x$ are perfect squares, $\nu_{p}(xy)$ and $\nu_{p}(x)$ are even integers. Since the difference between two even integers is even, $\nu_p(y) = \nu_{p}(xy) - \nu_{p}(x)$ must be even. Thus, every exponent in the prime factorization of $y$ is even, which implies $y$ is a perfect square.
 
 ---
 

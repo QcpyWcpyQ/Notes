@@ -85,7 +85,7 @@
   $$
   n=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_r^{\alpha_r}
   $$
-  where $p_1,p_2,\cdots,p_r$ are distinct primes and $\alpha_1, \alpha_2, \cdots, \alpha_r\in\mathbb N$. For each $i$, the notation $\mho_{p_i}(n)=\alpha_i$ denotes the exponent of the prime $p_i$ in the factorization of $n$.
+  where $p_1,p_2,\cdots,p_r$ are distinct primes and $\alpha_1, \alpha_2, \cdots, \alpha_r\in\mathbb N$. For each $i$, the notation $\nu_{p_i}(n)=\alpha_i$ denotes the exponent of the prime $p_i$ in the factorization of $n$.
   
   - **Proof 2.1**
   
@@ -136,7 +136,7 @@
       $$
     
   - **Proposition 2.4**
-    Suppose $x,y\in\mathbb N$, then $\mho_{p}(xy)=\mho_{p}(x)+\mho_p(y)$ for any prime $p$.
+    Suppose $x,y\in\mathbb N$, then $\nu_{p}(xy)=\nu_{p}(x)+\nu_p(y)$ for any prime $p$.
   
     - **Proof 2.4.1** 
       Consider the prime factorizations of $x$ and $y$. Let
@@ -149,7 +149,7 @@
       $$
       By the uniqueness of the prime factorization of $xy$, for each $p = p_k$, we have that
       $$
-      \mho_p(xy)=\alpha_k+\beta_k=\mho_p(x)+\mho_p(y).
+      \nu_p(xy)=\alpha_k+\beta_k=\nu_p(x)+\nu_p(y).
       $$
 
 ---
