@@ -177,4 +177,4 @@
             0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 
             \end{array}
       $$
-      Therefore, the statements are logically equivalent.
+      Therefore, the statements are logically equivalent.[]()

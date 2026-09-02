@@ -160,7 +160,7 @@
     
     \end{aligned}
     $$
-    Since $81 = 3^4$, we know that $\nu_p(81) \geqslant 0$ for any prime $p$. Together with $\nu_p(y) \geqslant 1$, we obtain that 
+    We know that $\nu_p(81) \geqslant 0$ for any prime $p$. Together with $\nu_p(y) \geqslant 1$, we obtain that 
     $$
     6\nu_p(x) = \nu_p(81) + 10\nu_p(y) \geqslant 0 + 10(1) = 10.
     $$
