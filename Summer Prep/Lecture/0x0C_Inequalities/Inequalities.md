@@ -203,11 +203,11 @@
          $$
          that is, $-c\leqslant a\leqslant c$.
   
-         临时条件充要性的反向证明（$\Longleftarrow$）：Suppose that $-c\leqslant a\leqslant c$. If $a\geqslant 0$, then $\vert a\vert=a$ and thus $\vert a\vert = a \leqslant c$. If $a<0$, then $\vert a\vert=-a$. Since $-c \leqslant a \implies -a \leqslant c$, we have $\vert a\vert = -a \leqslant c$. Thus, in both cases, $\vert a\vert \leqslant c$.
+         ($\Longleftarrow$) Suppose that $-c\leqslant a\leqslant c$. If $a\geqslant 0$, then $\vert a\vert=a$ and thus $\vert a\vert = a \leqslant c$. If $a<0$, then $\vert a\vert=-a$. Since $-c \leqslant a \implies -a \leqslant c$, we have $\vert a\vert = -a \leqslant c$. Thus, in both cases, $\vert a\vert \leqslant c$.
   
       2. ($\Longrightarrow$) Suppose that $\vert a\vert\geqslant c$. If $a\geqslant 0$, then $a=\vert a\vert\geqslant c$. If $a<0$, then $-a=\vert a\vert \geqslant c$, that is, $a\leqslant -c$.
   
-         （$\Longleftarrow$）Suppose that $a\leqslant -c\lor a\geqslant c$. If $a\leqslant -c$, then $-a\geqslant c \geqslant 0$ and thus $\vert a\vert=-a\geqslant c$. If $a\geqslant c \geqslant 0$, then $\vert a\vert = a\geqslant c$.
+         ($\Longleftarrow$) Suppose that $a\leqslant -c\lor a\geqslant c$. If $a\leqslant -c$, then $-a\geqslant c \geqslant 0$ and thus $\vert a\vert=-a\geqslant c$. If $a\geqslant c \geqslant 0$, then $\vert a\vert = a\geqslant c$.
   
   - **Example 2.4**
     Solve $\vert 5x+2\vert\geqslant 4$.
