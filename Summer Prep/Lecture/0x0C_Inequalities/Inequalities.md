@@ -94,10 +94,10 @@
       Therefore, the solution is $\left(-\infty,-4\right)\cup\left(\frac 12,\infty\right)$.
   
   - **Theorem 1.5**
-    If $a\in\mathbb R$ such that $0\leqslant a<\epsilon$ for every $\epsilon>0$, then $a=0$.
+    If $a\in\mathbb R$ such that $0\leqslant a<\varepsilon$ for every $\varepsilon>0$, then $a=0$.
   
     - **Proof 1.5.1**
-      If $a>0$, then let $\epsilon=\frac a2>0$. By the hypothesis, we have that 
+      If $a>0$, then let $\varepsilon=\frac a2>0$. By the hypothesis, we have that 
       $$
       0 \leqslant a < \frac a2.
       $$
