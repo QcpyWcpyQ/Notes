@@ -221,3 +221,24 @@
       \end{aligned}
       $$
       Therefore, the solution is the set $(-\infty,-\frac 65]\cup[\frac 25,\infty)$.
+    
+  - **Theorem 2.5 (Triangle inequality)**
+    For all $a,b\in\mathbb R$
+    $$
+    \vert a+b\vert\leqslant\vert a\vert +\vert b\vert.
+    $$
+  
+    - **Proof 2.5.1**
+      Since $ab\leqslant \vert ab\vert=\vert a\vert\vert b\vert$ then
+      $$
+      \begin{aligned}
+      
+      \vert a+b\vert ^2 &= \left\vert(a+b)^2\right\vert \\
+      &= (a+b)^2 \\
+      &= a^2+2ab +b^2 \\
+      &\leqslant \vert a\vert ^2+2\vert a\vert\vert b\vert +\vert b\vert ^2 \\
+      &=\left(\vert a\vert +\vert b\vert\right)^2
+      
+      \end{aligned}
+      $$
+      Hence $\vert a+b\vert\leqslant\vert a\vert +\vert b\vert$.
