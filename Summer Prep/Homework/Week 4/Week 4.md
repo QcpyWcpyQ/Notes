@@ -34,7 +34,6 @@
       q \in \{4, 20, 25, 50, 100\}.
       $$
       
-  
     * ($\Longleftarrow$) Suppose $q \in \{4, 20, 25, 50, 100\}$. Since $\dfrac{p}{q}$ is a reduced representation, we know that if $2 \mid q$ then $2 \not\mid p$, and if $5 \mid q$ then $5 \not\mid p$. By, proposition, we show that $10 \not\mid N$ for each case:
       * If $q = 4$, then $100p = 4N \implies N = 25p$. Since $4 = 2^2 \mid q$, we have $2 \not\mid p$, which means $p$ is odd. Thus, $2 \not\mid 25p \implies 2 \not\mid N \implies 10 \not\mid N$.
       * If $q = 20$, then $100p = 20N \implies N = 5p$. Since $20 = 2^2 \cdot 5 \mid q$, we have $2 \not\mid p$, which means $p$ is odd. Thus, $2 \not\mid 5p \implies 2 \not\mid N \implies 10 \not\mid N$.
@@ -74,7 +73,7 @@
     
     2. By contradiction. Suppose $x = \sqrt 2 + \sqrt 3$ is a rational number, that is, $x \in \mathbb Q$.
       Then we have
-      $$
+    $$
       \begin{aligned}
       
       x = \sqrt 2 + \sqrt 3 &\implies x - \sqrt 2 = \sqrt 3 \\
@@ -84,7 +83,7 @@
       &\implies \sqrt 2 = \dfrac{x^2 - 1}{2x}.
       
       \end{aligned}
-      $$
+    $$
       Since $x \neq 0$, so the denominator $2x \neq 0$. Since $x\in\Q$, we have that $\dfrac{x^2 - 1}{2x}\in\Q$. But $\sqrt 2\not\in\Q$ by proposition, which is a contradiction. Therefore, $x = \sqrt 2 + \sqrt 3$ must be irrational.
 
 ---
@@ -114,13 +113,13 @@
 ---
 
 - **Problem 4**
-  Prove that for every $\epsilon > 0$, there exists $\delta > 0$, such that
+  Prove that for every $\varepsilon > 0$, there exists $\delta > 0$, such that
   $$
-  0 < |x - 3| < \delta \implies \left| \dfrac{x - 1}{x^2} - \dfrac{2}{9} \right| < \epsilon.
+  0 < |x - 3| < \delta \implies \left| \dfrac{x - 1}{x^2} - \dfrac{2}{9} \right| < \varepsilon.
   $$
 
   - **Proof 4.1**
-    Suppose $\epsilon > 0$ and let $\delta := \min\left\{1, \dfrac{36\epsilon}{5}\right\}$. Suppose $0 < |x - 3| < \delta$.  
+    Suppose $\varepsilon > 0$ and let $\delta := \min\left\{1, \dfrac{36\varepsilon}{5}\right\}$. Suppose $0 < |x - 3| < \delta$.  
     Since $\delta \leqslant 1$, we have $|x - 3| < 1$, which implies
     $$
     -1 < x - 3 < 1 \implies 2 < x < 4.
@@ -137,9 +136,9 @@
     $$
     \dfrac{|2x - 3|}{9x^2} < \dfrac{5}{36}.
     $$
-    Since we also have $|x - 3| < \delta \leqslant \dfrac{36\epsilon}{5}$, it follows that:
+    Since we also have $|x - 3| < \delta \leqslant \dfrac{36\varepsilon}{5}$, it follows that:
     $$
-    \left| \dfrac{x - 1}{x^2} - \dfrac{2}{9} \right| = |x - 3| \cdot \dfrac{|2x - 3|}{9x^2} < \left(\dfrac{36\epsilon}{5}\right) \cdot \dfrac{5}{36} = \epsilon.
+    \left| \dfrac{x - 1}{x^2} - \dfrac{2}{9} \right| = |x - 3| \cdot \dfrac{|2x - 3|}{9x^2} < \left(\dfrac{36\varepsilon}{5}\right) \cdot \dfrac{5}{36} = \varepsilon.
     $$
     Therefore, the statement is proved.
 
