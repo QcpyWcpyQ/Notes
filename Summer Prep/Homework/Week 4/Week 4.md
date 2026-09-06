@@ -114,8 +114,6 @@
 ---
 
 - **Problem 4**
-  
-- **Problem 4**
   Prove that for every $\epsilon > 0$, there exists $\delta > 0$, such that
   $$
   0 < |x - 3| < \delta \implies \left| \dfrac{x - 1}{x^2} - \dfrac{2}{9} \right| < \epsilon.
