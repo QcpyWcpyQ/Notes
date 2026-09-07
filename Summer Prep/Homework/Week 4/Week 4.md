@@ -67,7 +67,7 @@
        $$
        Since $4<6<9$, we have $\sqrt 4<\sqrt 6<\sqrt 9$, that is, $2<\sqrt 6<3$. Then
        $$
-       2\times 2+5<2\sqrt 6+5<4\times 2+5 \implies9 < x^2 < 11.
+       2\times 2+5<2\sqrt 6+5<3\times 2+5 \implies9 < x^2 < 11.
        $$
        Thus $\sqrt 9<\sqrt {x^2}<\sqrt {11}$. SInce $x>0$, we have $3<x<\sqrt {11}$. Because $\sqrt{11}<\sqrt{16}=4$,  by transitivity of order, we obtain that $3<x<4$.
     
