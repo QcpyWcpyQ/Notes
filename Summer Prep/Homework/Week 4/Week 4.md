@@ -34,7 +34,7 @@
       q \in \{4, 20, 25, 50, 100\}.
       $$
       
-    * ($\Longleftarrow$) Suppose $q \in \{4, 20, 25, 50, 100\}$. Since $\dfrac{p}{q}$ is a reduced representation, we know that if $2 \mid q$ then $2 \not\mid p$, and if $5 \mid q$ then $5 \not\mid p$. By, proposition, we show that $10 \not\mid N$ for each case:
+    * ($\Longleftarrow$) Suppose $q \in \{4, 20, 25, 50, 100\}$. Since $\dfrac{p}{q}$ is a reduced representation, we know that if $2 \mid q$ then $2 \not\mid p$, and if $5 \mid q$ then $5 \not\mid p$. By proposition, we show that $10 \not\mid N$ for each case:
       * If $q = 4$, then $100p = 4N \implies N = 25p$. Since $4 = 2^2 \mid q$, we have $2 \not\mid p$, which means $p$ is odd. Thus, $2 \not\mid 25p \implies 2 \not\mid N \implies 10 \not\mid N$.
       * If $q = 20$, then $100p = 20N \implies N = 5p$. Since $20 = 2^2 \cdot 5 \mid q$, we have $2 \not\mid p$, which means $p$ is odd. Thus, $2 \not\mid 5p \implies 2 \not\mid N \implies 10 \not\mid N$.
       * If $q = 25$, then $100p = 25N \implies N = 4p$. Since $25 = 5^2 \mid q$, we have $5 \not\mid p$. Thus, $5 \not\mid 4p \implies 5 \not\mid N \implies 10 \not\mid N$.
@@ -96,7 +96,7 @@
   Your proof should use the definition of the square root and the arithmetic properties of inverses rather than assuming a rule for manipulating roots.
 
   - **Proof 3.1**
-    Suppose $x>0$. Let $u = \sqrt{x^{-1}}$. Since $x > 0 \implies x^{-1} > 0$, definition, $u$ is the unique positive real number satisfying
+    Suppose $x>0$. Let $u = \sqrt{x^{-1}}$. Since $x > 0 \implies x^{-1} > 0$, by definition, $u$ is the unique positive real number satisfying
     $$
     u^2 = x^{-1}. \quad (1)
     $$
