@@ -155,7 +155,7 @@
       Suppose that $\deg(p(x))=2k+1$ for some $k\in\mathbb N_0$ then $p(x)$ has roots $\alpha_1,\alpha_2,\cdots,\alpha_{2k+1}\in\mathbb C$ and by Theorem 4.6, $\overline{\alpha_1},\overline{\alpha_2},\cdots,\overline{\alpha_{2k+1}}$ are also roots of $p(x)$. There exist some roots such that $\alpha_i=\overline{\alpha_i}$ and thus $\alpha_i\in\mathbb R$.
 
   - **Theorem 4.8 (Rational roots theorem)**  
-    Let $p(x)=a_0+a_1x+\cdots+a_nx^n\in\mathbb Z[x]$ with $a_n\neq 0$ and let \(\alpha=\dfrac rs\in\mathbb Q\) with $r\in\mathbb Z,s\in\mathbb Z$ and $r,s$ are coprime. If $\alpha$ is a root of $p(x)$ then we have that $r\mid a_0$ and $s\mid a_n$. For example, let
+    Let $p(x)=a_0+a_1x+\cdots+a_nx^n\in\mathbb Z[x]$ with $a_n\neq 0$ and let \(\alpha=\dfrac rs\in\mathbb Q\) with $r\in\mathbb N,s\in\mathbb Z$ and $r,s$ are coprime. If $\alpha$ is a root of $p(x)$ then we have that $r\mid a_0$ and $s\mid a_n$. For example, let
     $$
     p(x)=3x^3+2x^2-2x-8.
     $$
