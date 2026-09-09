@@ -77,7 +77,7 @@
 
       2. ($\Longrightarrow$) Suppose that $p(x)$ is irreducible over $\mathbb K$ then by the corollary $p(x)$ has no roots in $\mathbb K$.
 
-         （$\Longleftarrow$）Suppose that $p(x)$ has no roots in $\mathbb K$. If $p(x)$ is reducible over $\mathbb K$ then $p(x)=q(x)h(x)$ for some nonconstant polynomials $q(x),h(x)\in\mathbb K[x]$. Hence
+         ($\Longleftarrow$) Suppose that $p(x)$ has no roots in $\mathbb K$. If $p(x)$ is reducible over $\mathbb K$ then $p(x)=q(x)h(x)$ for some nonconstant polynomials $q(x),h(x)\in\mathbb K[x]$. Hence
          $$
          2=\deg(p(x))=\deg(q(x)h(x))=\deg(q(x))+\deg(h(x)).
          $$
