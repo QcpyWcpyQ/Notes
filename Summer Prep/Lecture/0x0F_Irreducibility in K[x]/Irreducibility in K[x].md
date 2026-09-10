@@ -155,7 +155,7 @@
       Suppose that $\deg(p(x))=2k+1$ for some $k\in\mathbb N_0$ then $p(x)$ has roots $\alpha_1,\alpha_2,\cdots,\alpha_{2k+1}\in\mathbb C$ and by Theorem 4.6, $\overline{\alpha_1},\overline{\alpha_2},\cdots,\overline{\alpha_{2k+1}}$ are also roots of $p(x)$. There exist some roots such that $\alpha_i=\overline{\alpha_i}$ and thus $\alpha_i\in\mathbb R$.
 
   - **Theorem 4.8 (Rational roots theorem)**  
-    Let $p(x)=a_0+a_1x+\cdots+a_nx^n\in\mathbb Z[x]$ with $a_n\neq 0$ and let \(\alpha=\dfrac rs\in\mathbb Q\) with $r\in\mathbb N,s\in\mathbb Z$ and $r,s$ are coprime. If $\alpha$ is a root of $p(x)$ then we have that $r\mid a_0$ and $s\mid a_n$. For example, let
+    Let $p(x)=a_0+a_1x+\cdots+a_nx^n\in\mathbb Z[x]$ with $a_0,a_n\neq 0$ and let \(\alpha=\dfrac rs\in\mathbb Q\) with $r\in\mathbb N,s\in\mathbb Z$ and $r,s$ are coprime. If $\alpha$ is a root of $p(x)$ then we have that $r\mid a_0$ and $s\mid a_n$. For example, let
     $$
     p(x)=3x^3+2x^2-2x-8.
     $$
@@ -163,3 +163,28 @@
     $$
     \pm 1,\pm 2,\pm 4,\pm 8,\pm\dfrac 13,\pm\dfrac 23,\pm\dfrac 43,\pm\dfrac 83.
     $$
+    
+    - **Proof 4.8.1**
+      Suppose $p(x)=a_0+a_1x+\cdots+a_nx^n\in\mathbb Z[x]$ with $a_0,a_n\neq 0$. Suppose $p\left(\dfrac rs\right)=0$ for some coprime $r,s\in\mathbb Z$, that is  
+      $$
+      p\left(\dfrac rs\right)=a_0+a_1\left(\dfrac rs\right)+\cdots+a_n\left(\dfrac rs\right)^n=0.
+      $$
+      To clear denominators, multiplying both sides by $s^n$ yields
+      $$
+      a_0s^n+a_1rs^{n-1}+\cdots+a_{n-1}r^{n-1}s+a_nr^n=0.
+      $$
+      Shifting the $a_0s^n$ term to the right side and factoring out $r$ on the left side produces  
+      $$
+      r\left(a_{1}s^{n-1}+a_2 rs^{n-2}+\cdots+a_{n-1}r^{n-2}s+a_{n}r^{n-1}\right)=-a_{0}s^{n}.
+      $$
+      Thus, $r$ divides $a_0s^n$ But $r$ is coprime to $s$ and therefore to $s^n$, so by Euclid's lemma $r$ must divide the remaining factor $a_0$.
+      $$
+      r \mid a_0.
+      $$
+      On the other hand, shifting the $a_nr^n$ term to the right side and factoring out $s$ on the left side produces  
+      $$
+      s\left(a_{0}s^{n-1}+a_1rs^{n-2}+\cdots+a_{n-1}r^{n-1}\right)=-a_{n}r^{n}.
+      $$
+      Similarly it follows that $s$ divides $a_n$. Therefore, the rational roots theorem is proved.
+    
+      
