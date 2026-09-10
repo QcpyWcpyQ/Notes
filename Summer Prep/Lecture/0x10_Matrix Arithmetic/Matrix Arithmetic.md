@@ -217,7 +217,7 @@ Let $S$ be one of the sets $\mathbb Z, \mathbb Q, \mathbb R$ or $\mathbb C$.
 
 ---
 
-- **Definition 7**  
+- [ ] **Definition 7**  
   Consider two matrices $A=\lb a_{ij} \eb_{m\times n}\in M_{m\times n}(S)$ and $B=\lb b_{jk} \eb_{n\times p}\in M_{n\times p}(S)$. We define the **product** as the matrix  
   $$
   C=\lb c_{ik} \eb_{m\times p}
@@ -266,17 +266,17 @@ Let $S$ be one of the sets $\mathbb Z, \mathbb Q, \mathbb R$ or $\mathbb C$.
     6 & 16
     \eb.
     $$
-  
+
   - **Theorem 7.3**  
     Let $A,B,C$ be matrices with sizes such that the foloowing operations make sense and let $\alpha\in S$. Then
-  
+
     1. $(AB)C=A(BC)$.
     2. $(A+B)C=AC+BC$.
     3. $A(B+C)=AB+AC$.
     4. $\alpha AB=(\alpha A)B=A(\alpha B)$.
-  
+
     - **Proof 7.3.1**  
-  
+
       1. Let $A=\lb a_{ij} \eb_{m\times n},B=\lb b_{jk} \eb_{n\times p},C=\lb c_{kl} \eb_{p\times q}$. Then  
          $$
          \begin{aligned}
@@ -286,17 +286,17 @@ Let $S$ be one of the sets $\mathbb Z, \mathbb Q, \mathbb R$ or $\mathbb C$.
          
          \end{aligned}
          $$
-  
+
   - **Theorem 7.3**  
     Let $A, B, C$ be matrices with sizes such that the following operations make sense and let $\alpha\in S$. Then  
-  
+
     1. $(AB)C=A(BC)$.
     2. $(A+B)C=AC+BC$.
     3. $A(B+C)=AB+AC$.
     4. $\alpha (AB)=(\alpha A)B=A(\alpha B)$.
-  
+
     - **Proof 7.3.1**  
-  
+
       1. Let $A=\lb a_{ij} \eb_{m\times n}$, $B=\lb b_{jk} \eb_{n\times p}$ and $C=\lb c_{kl} \eb_{p\times q}$. Then
          $$
          \begin{aligned}
@@ -311,7 +311,7 @@ Let $S$ be one of the sets $\mathbb Z, \mathbb Q, \mathbb R$ or $\mathbb C$.
          &= A(BC).
          \end{aligned}
          $$
-  
+
       2. Let $A=\lb a_{ij} \eb_{m\times n}$, $B=\lb b_{ij} \eb_{m\times n}$, and $C=\lb c_{jk} \eb_{n\times p}$. Then
          $$
          \begin{aligned}
@@ -325,7 +325,7 @@ Let $S$ be one of the sets $\mathbb Z, \mathbb Q, \mathbb R$ or $\mathbb C$.
          &= AC + BC.
          \end{aligned}
          $$
-  
+
       3. Let $A=\lb a_{ij} \eb_{m\times n}$, $B=\lb b_{jk} \eb_{n\times p}$, and $C=\lb c_{jk} \eb_{n\times p}$. Then
          $$
          \begin{aligned}
@@ -339,7 +339,7 @@ Let $S$ be one of the sets $\mathbb Z, \mathbb Q, \mathbb R$ or $\mathbb C$.
          &= AB + AC.
          \end{aligned}
          $$
-  
+
       4. Let $A=\lb a_{ij} \eb_{m\times n}$ and $B=\lb b_{jk} \eb_{n\times p}$. Then
          $$
          \begin{aligned}
@@ -352,7 +352,7 @@ Let $S$ be one of the sets $\mathbb Z, \mathbb Q, \mathbb R$ or $\mathbb C$.
          &= (\alpha A)B = A(\alpha B).
          \end{aligned}
          $$
-  
+
   - **Remark 7.4**  
     The product of matrices is not commutative. For example, consider  
     $$
@@ -405,7 +405,7 @@ Let $S$ be one of the sets $\mathbb Z, \mathbb Q, \mathbb R$ or $\mathbb C$.
     \end{aligned}
     $$
     That is, $AB\neq BA$.
-  
+
   - **Remark 7.5**  
     The product between two nonzero square matrices canbe zero matrix. For example
     $$
