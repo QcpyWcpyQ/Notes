@@ -43,7 +43,7 @@
       $$
       If $r>0$, then $r\in S$, which contradicts the minimality of $d$. Therefore we obtain that $r=0$ and $a=dq$, that is, $d\mid a$. Using the same argument, dividing $p$ by $d$ shows that $d\mid p$. Now, as $p$ is prime we have that $d=1\lor d=p$, but as $p\not\mid a$ we have that $d=1$. Therefore we obtain that $ax_0+py_0=1$.
 
-  - **Corollary 1.4**
+  - **Corollary 1.4 (Euclid's Lemma)**
     (1) Let $p$ be a prime and let $a,b\in\mathbb Z$. If $p\mid ab$, then $p\mid a\lor p\mid b$.
 
     - **Proof 1.4.1**
