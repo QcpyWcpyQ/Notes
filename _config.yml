@@ -1,7 +1,9 @@
 title: "GTIIT | MCS 2026 Course Notes"
-description: "MCS 2026 Course Notes repository for review materials and study notes."
-
+theme: jekyll-theme-primer
 remote_theme: just-the-docs/just-the-docs
 
-plugins:
-  - jekyll-remote-theme
+color_scheme: light
+search_enabled: true
+heading_anchors: false
+
+mathjax: true
