@@ -6,4 +6,4 @@ color_scheme: light
 search_enabled: true
 heading_anchors: false
 
-mathjax: true
+math: mathjax
